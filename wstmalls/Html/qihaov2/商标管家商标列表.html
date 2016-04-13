@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>会员中心商标管家商标列表</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min-1.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="zllisttop">
+<div class="zllisttop_left">
+<a href="#" title="#" target="_blank">7号网首页</a><a href="#" title="#" target="_blank">商标市场</a><a href="#" title="#" target="_blank">专利市场</a><a href="#" title="#" target="_blank">商标管家</a><a href="#" title="#" target="_blank">专利管家</a><a href="#" title="#" target="_blank">更多</a>客服热线：400-889-7080
+</div>
+<div class="zllisttop_right">
+您好，<a href="#" title="#" target="_blank">PM1412161705087</a> &nbsp;&nbsp;<a href="#" title="#">退出</a>
+</div>
+</div>
+<!--头部-->
+<!--logo与搜索-->
+<div class="zllogo_search">
+<div class="zllist_logo">
+<img src="images/zl_logo.png"/>
+</div>
+<div class="zllist_search">
+<div class="col-xs-12 patjb">
+<!--
+<div class="col-xs-12 patyhs">
+您当前为<span>普通会员</span>,共能添加<span>100</span>件商标,已添加商标<span>92</span>件专利。
+</div>
+-->
+<div class="col-xs-12">
+<div class="zlpaform">
+<form method="post" action="a.html">
+<div class="formdiv">
+<select name="zlm" class="pazlm">
+<option value="专利名">商标名</option>
+<option value="权利人">权利人</option>
+</select>
+<select name="zlm" class="pazlm">
+<option value="专利名">全类</option>
+<option value="权利人">权利人</option>
+</select>
+<input type="text" name="paseach" class="hand_search" />
+<input type="submit" value="检索" class="pasub"/>
+</div>
+
+</form>
+</div>
+<div class="tips">温馨提示：可输入注册号,权利人,商标名称等信息,输入全称查询结果最佳</div>
+</div>
+</div>
+</div>
+</div>
+<!--logo与搜索-->
+<div class="zlhzlcon">
+  <!--左侧导航-->
+  <div class="zlhconleft">
+  <div class="zllist_title">数据筛选</div>
+    <div class="zlhconlefts">
+	<form action="a.html" method="post">
+      <dl>
+        <dt class="zllist_ons"><a href="javascript:" title="#">商标类别</a></dt>
+        <dd><input type="checkbox" name="famins" value="famins">&nbsp;01类(1025)</dd>
+        <dd><input type="checkbox" name="famins" value="shiyous">&nbsp;02类(1025)</dd>
+        <dd><input type="checkbox" name="famins" value="waiguans">&nbsp;03类(1025)</dd>
+		<dd><input type="checkbox" name="famins" value="xianggans">&nbsp;25类(1025)</dd>
+        <dd><input type="checkbox" name="famins" value="taiwans">&nbsp;35类(1025)</dd>
+		<dd><button type="submit" class="btn btn-default zllist_tijiao">确定</button></dd>
+      </dl>
+	  
+      <dl>
+        <dt><a href="javascript:" title="#">申请日</a></dt>
+        <dd><input type="checkbox" name="famins" value="famins">&nbsp;2015(273)</dd>
+        <dd><input type="checkbox" name="famins" value="shiyous">&nbsp;2014(273)</dd>
+        <dd><input type="checkbox" name="famins" value="waiguans">&nbsp;2013(273)</dd>
+		<dd><input type="checkbox" name="famins" value="xianggans">&nbsp;2012(273)</dd>
+        <dd><input type="checkbox" name="famins" value="taiwans">&nbsp;2011(273)</dd>
+		<dd><button type="submit" class="btn btn-default zllist_tijiao">确定</button></dd>
+      </dl>
+	 
+      <dl>
+        <dt><a href="javascript:" title="#">注册日</a></dt>
+        <dd><input type="checkbox" name="famins" value="famins">&nbsp;2015(273)</dd>
+        <dd><input type="checkbox" name="famins" value="shiyous">&nbsp;2014(273)</dd>
+        <dd><input type="checkbox" name="famins" value="waiguans">&nbsp;2013(273)</dd>
+		<dd><input type="checkbox" name="famins" value="xianggans">&nbsp;2012(273)</dd>
+        <dd><input type="checkbox" name="famins" value="taiwans">&nbsp;2011(273)</dd>
+		<dd><button type="submit" class="btn btn-default zllist_tijiao">确定</button></dd>
+      </dl>
+	 
+      <dl>
+        <dt><a href="javascript:" title="#">权利人</a></dt>
+        <dd><input type="checkbox" name="famins" value="famins">&nbsp;张三(273)</dd>
+        <dd><input type="checkbox" name="famins" value="shiyous">&nbsp;李国家(273)</dd>
+        <dd><input type="checkbox" name="famins" value="waiguans">&nbsp;要要中(273)</dd>
+		<dd><input type="checkbox" name="famins" value="xianggans">&nbsp;为在地(273)</dd>
+        <dd><input type="checkbox" name="famins" value="taiwans">&nbsp;为在地为在地为在地为在地为在地为在地(273)</dd>
+		<dd><button type="submit" class="btn btn-default zllist_tijiao">确定</button></dd>
+      </dl>
+	  
+      <dl>
+        <dt><a href="javascript:" title="#">商标状态</a></dt>
+        <dd><input type="checkbox" name="famins" value="famins">&nbsp;商标状态1(273)</dd>
+        <dd><input type="checkbox" name="famins" value="shiyous">&nbsp;商标状态2(273)</dd>
+        <dd><input type="checkbox" name="famins" value="waiguans">&nbsp;商标状态3(273)</dd>
+		<dd><input type="checkbox" name="famins" value="xianggans">&nbsp;商标状态4(273)</dd>
+		<dd><button type="submit" class="btn btn-default zllist_tijiao">确定</button></dd>
+      </dl>
+	  </form>
+    </div>
+  </div>
+  <!--左侧导航-->
+  <!--右侧内容-->
+  <div class="zlhconright">
+  <div class="zl_list">
+  <div class="col-xs-12 zl_list_selall">
+  <div class="zl_listall"><input type="checkbox" name="alls" id="alls" />&nbsp;全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您选中了<span id="nums">0</span>件商标</div>
+  <a href="#" title="#" class="btn btn-default">添加商标</a>
+  <p>检索结果[11810] 耗时：0.234s</p>
+  </div>
+  <div class="col-xs-12 zllist_content">
+  <div class="col-xs-12 zllist_one">
+  <div class="zllist_one_img"><a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a></div>
+  <div class="zllist_one_contents">
+  <div class="col-xs-12 zllist_one_title">
+  <input type="checkbox" name="gwtc1" value="1" />
+  <div class="zllist_one_titleright"><h2><a href="#" title="#">【01】注册号:491057137 Ex</a><span class="youxiao">已注册</span></h2></div>
+  </div>
+  <div class="col-xs-12 zllist_one_p">
+  <p><span>申请人:</span>中国航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团</p>
+  <p><span>申请日:</span>2013-10-22</p>
+  <p><span>有效期:</span>2023-10-22</p>
+  </div>
+  <div class="col-xs-12 zllist_one_jianjie">
+  <span>摘要:</span>本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种
+  </div>
+  </div>
+  </div>
+  <div class="col-xs-12 zllist_one">
+  <div class="zllist_one_img"><a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a></div>
+  <div class="zllist_one_contents">
+  <div class="col-xs-12 zllist_one_title">
+  <input type="checkbox" name="gwtc1" value="1" />
+  <div class="zllist_one_titleright"><h2><a href="#" title="#">【01】 注册号:491057137 Ex注册号:491057137 Ex注册号:491057137 Ex注册号:491057137 Ex注册号:491057137 Ex</a><span class="shixiao">已无效</span></h2></div>
+  </div>
+  <div class="col-xs-12 zllist_one_p">
+  <p><span>申请人:</span>中国航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团</p>
+  <p><span>申请日:</span>2013-10-22</p>
+ <p><span>有效期:</span>2023-10-22</p>
+  </div>
+  <div class="col-xs-12 zllist_one_jianjie">
+  <span>摘要:</span>本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种
+  </div>
+  </div>
+  </div>
+  <div class="col-xs-12 zllist_one">
+  <div class="zllist_one_img"><a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a></div>
+  <div class="zllist_one_contents">
+  <div class="col-xs-12 zllist_one_title">
+  <input type="checkbox" name="gwtc1" value="1" />
+  <div class="zllist_one_titleright"><h2><a href="#" title="#">【01】 注册号:491057137 E</a><span class="shizhi">实质审查</span></h2></div>
+  </div>
+  <div class="col-xs-12 zllist_one_p">
+  <p><span>申请人:</span>中国航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团</p>
+  <p><span>申请日:</span>2013-10-22</p>
+   <p><span>有效期:</span>2023-10-22</p>
+  </div>
+  <div class="col-xs-12 zllist_one_jianjie">
+  <span>摘要:</span>本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种
+  </div>
+  </div>
+  </div>
+  <div class="col-xs-12 zllist_one">
+  <div class="zllist_one_img"><a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a></div>
+  <div class="zllist_one_contents">
+  <div class="col-xs-12 zllist_one_title">
+  <input type="checkbox" name="gwtc1" value="1" />
+  <div class="zllist_one_titleright"><h2><a href="#" title="#">【01】 注册号:491057137 E</a><span class="bufen">驳回复审</span></h2></div>
+  </div>
+  <div class="col-xs-12 zllist_one_p">
+  <p><span>申请人:</span>中国航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团</p>
+  <p><span>申请日:</span>2013-10-22</p>
+  <p><span>有效期:</span>2023-10-22</p>
+  </div>
+  <div class="col-xs-12 zllist_one_jianjie">
+  <span>摘要:</span>本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种
+  </div>
+  </div>
+  </div>
+  <div class="col-xs-12 zllist_one">
+  <div class="zllist_one_img"><a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a></div>
+  <div class="zllist_one_contents">
+  <div class="col-xs-12 zllist_one_title">
+  <input type="checkbox" name="gwtc1" value="1" />
+  <div class="zllist_one_titleright"><h2><a href="#" title="#">【01】注册号:491057137 Ex</a><span class="gokai">申请中</span></h2></div>
+  </div>
+  <div class="col-xs-12 zllist_one_p">
+  <p><span>申请人:</span>中国航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团航天科技集团</p>
+  <p><span>申请日:</span>2013-10-22</p>
+   <p><span>有效期:</span>2023-10-22</p>
+  </div>
+  <div class="col-xs-12 zllist_one_jianjie">
+  <span>摘要:</span>本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种本发明涉及一种
+  </div>
+  </div>
+  </div>
+  <div class="daohan">
+            <div class="qiehuan pabluest">
+              <div class="qieleft"><a href="#" title="#"> <<上一页 </a></div>
+              <ul>
+                <li><a href="#" title="#">1</a></li>
+                <li><a href="#" title="#">2</a></li>
+                <li><a href="#" title="#">3</a></li>
+                <li><a href="#" title="#">4</a></li>
+                <li><a href="#" title="#">5</a></li>
+              </ul>
+              <div class="qieleft"><a href="#" title="#">下一页>> </a></div>
+              <div class="tiao"> <span>共58页/1235条</span>
+                <form method="post" action="#" class="fudons">
+                  <input type="text" name="shu" value="1" class="inps"/>
+                  <input type="submit" value="GO" class="sub"/>
+                </form>
+              </div>
+            </div>
+          </div>
+  </div>
+  </div>
+  <div class="zl_list_right">
+  <div class="col-xs-12 zllist_hot">
+  <div class="col-xs-12 zllist_hots">
+  <div class="col-xs-12 zllist_hots_title">相关推荐</div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  </div>
+  <div class="col-xs-12 zllist_hots">
+  <div class="col-xs-12 zllist_hots_title">热门商标</div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  <div class="zllist_hots_img">
+  <div class="zllist_hots_imgs">
+  <a href="#" title="#"><img src="images/zllist_one_img.jpg"/></a>
+  </div>
+  <a href="#" title="#">09-科学仪器</a>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  <!--右侧内容-->
+  
+</div>
+<div class="zllist_bottom">©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客服热线：400-889-7080&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市南山区南山大道3838号深圳设计产业园金栋210-223、308-312</div>
+<script type='text/javascript'>
+/*选中数量*/
+function zoushu(){
+	var num=$("input[name*='gwtc']:checked").length;
+	$("#nums").html(num);
+	}
+
+/*全选*/
+$('#alls').click(function(){
+if(this.checked){
+$(".zllist_content").find("input[name*='gwtc']").prop("checked",true);
+}else{
+$(".zllist_content").find("input[name*='gwtc']").removeAttr("checked");
+}
+zoushu();
+})
+$(".zllist_content input[name*='gwtc']").click(function(){
+if(!(this.checked)){
+$('#alls').removeAttr("checked");
+}
+zoushu();
+})
+/*全选*/
+$(document).ready(function(){
+$('.zllist_ons').parent().children('dd').slideToggle("slow");
+});
+$(function(){
+	$(".zlhconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+
+});
+$(function () {
+		$(window).scroll(function(){
+			if ($(window).scrollTop()>183){
+				$(".zlhconleft").addClass("zlhconleft_fixed");
+			}else{
+				$(".zlhconleft").removeClass("zlhconleft_fixed");
+			}
+		});
+	});
+/*搜索全选*/
+$('.allsel').click(function(){
+if(this.checked){
+$(".pacheckbox").find("input[name*='Fruit']").prop("checked",true);
+}else{
+$(".pacheckbox").find("input[name*='Fruit']").removeAttr("checked");
+}
+})
+$(".allone").click(function(){
+if(!(this.checked)){
+$('.allsel').removeAttr("checked");
+}
+})
+
+/*搜索全选*/
+
+</script>
+</body>
+</html>

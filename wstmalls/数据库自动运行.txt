@@ -1,0 +1,3 @@
+UPDATE `qh_item` SET `aid`=(select aid from qh_member where qh_member.id = qh_item.userid)
+UPDATE `qh_item` SET `aid`=`userid` where (select count(*) from qh_member where qh_member.id = qh_item.userid and qh_member.admin>1) <> 0
+//更新商品中的aid数据。

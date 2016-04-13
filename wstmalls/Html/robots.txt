@@ -1,0 +1,6 @@
+﻿User-agent: * 
+Disallow: /ckeditor/
+Disallow: /qihaov2/
+Disallow: /ueditor/
+Disallow: /Index
+Disallow: /index

@@ -1,0 +1,59 @@
+.kjjr_main{ font-size:13px; line-height:185%; margin-top:20px;}
+.kjjr_left{ float:left;}
+.kjjr_right{ float:right;}
+.white, .white a, .white a:hover, a.white, a.white:hover{ color:#fff;}
+.clear{ clear:both;}
+.kjjr_menu{ background:#ff8400;}
+.kjjr_menu ul li{ float:left; height:45px; line-height:45px;}
+.kjjr_menu ul li a{ color:#ffffff; font-size:15px; padding:0 20px; display:block; margin-right:1px;}
+.kjjr_menu ul li a:hover, .kjjr_menu .kjjr_over{ background:#ffe469; color:#000000; }
+
+.kjjr_h2_1{ font-size:20px; line-height:30px; padding-bottom:30px; color:#ff6600;}
+.kjjr1{padding:0 20px 20px 0; margin-top:20px;}
+.kjjr1 p{ text-indent:2em;}
+.kjjr1_1 a{ background:#fe8300; width:180px; height:38px; line-height:38px; display:block; text-align:center;}
+.kjjr1_1 a:hover{ background:#ff6600;}
+.kjjr1_1 span{ background:#ffb137; width:40px; height:37px; line-height:37px; display:block; text-indent:0;}
+
+.kjjr2{}
+.kjjr2_1{ background:url(../images/kjjr_pic2.jpg) no-repeat 10px 0; height:62px; position:relative;}
+.kjjr2_1 p{ position:absolute; line-height:18px;}
+.kjjr2_2{ left:0px; top:60px;}
+.kjjr2_3{ left:160px; top:60px;}
+.kjjr2_4{ left:300px; top:60px;}
+.kjjr2_5{ left:430px; top:60px;}
+.kjjr2_6{ left:540px; top:60px;}
+.kjjr2_7{ left:690px; top:60px;}
+.kjjr2_8{ left:850px; top:60px;}
+.kjjr2_9{ left:100px; top:10px;}
+.kjjr2_10{ left:240px; top:10px;}
+.kjjr2_11{ left:370px; top:10px;}
+/* 底边框1px改为2px */
+.kjjr_h2_2{ border-bottom:2px solid #ff6600; font-size:20px; line-height:40px; color:#ff6600;}
+.kjjr_h2_2 span{ color:#555555; font-size:12px;}
+
+.kjjr3{ margin:13px 0 0 0;}
+.kjjr3 dt a{ width:118px; height:140px; overflow:hidden; background:#fe8300; padding-top:50px; text-align:center; color:#fff; font-size:24px; font-weight:normal; display:inline-block;}
+.kjjr3 dd{ background:#fff8ec; line-height:26px; padding:13px 15px; width:470px;}
+.kjjr3 .kjjr3_1 a{ background:#ffbc46;}
+.kjjr3 .kjjr3_2{ background:#fffbf4;}
+
+.kjjr3_3{ color:#ff6600; padding-top:20px;}
+.kjjr3_3 ul li{ float:left; width:50%;}
+
+.kjjr4 ul li a{ width:280px; height:50px; border:1px solid #f0f0f0; text-align:center; overflow:hidden; display:inline-block; float:left; margin:6px 8px;}
+
+.kjjr5{ border:1px solid #ccc; margin-right:10px;}
+.kjjr5_h2{ background:#f0f0f0; border-bottom:1px solid #ccc; height:45px; line-height:45px; padding-left:20px; font-weight:bold;}
+.kjjr5_1{ padding:10px 20px 0;}
+.kjjr5_1 ul li a{ line-height:32px; height:32px; display:block;}
+.kjjr5_1 ul li span{ float:right; padding-top:10px;}
+.kjjr5_1 .kjjr5_hover, .kjjr5_1 ul li a:hover{ color:#ff6600;}
+.kjjr5 p{ margin:10px;}
+
+.kjjr6 li a{ display:block; border-bottom:1px dashed #ccc; line-height:34px; padding:0 15px;}
+.kjjr6 li span{ float:right;}
+.kjjr6_1 .daohan{ text-align:center; margin-top:20px;}
+
+
+

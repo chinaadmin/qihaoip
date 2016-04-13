@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>用户中心发布商标</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min-1.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<script type="text/javascript" src="js/laydate.dev.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+<div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+<div class="col-xs-10 hnavlist newhnavlist">
+<ul>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>会员首页</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>资金管理</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>买家中心</a></li>
+<li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav4s.png"/><br/>卖家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav7.png"/><br/>商城管理</a></li>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav5.png"/><br/>商标管家</a></li>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav6.png"/><br/>专利管家</a></li>
+</ul>
+</div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+	<dl>
+		<dt><a href="#" title="#">发布管理</a></dt>
+		<dd><a href="#" title="#" id="hons2" class="onth">发布商品</a></dd>
+		<dd><a href="#" title="#" id="hons3" >我的商品</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#" title="#">订单管理</a></dt>
+		<dd><a href="#" title="#" id="hons2" >我的订单</a></dd>
+	</dl>
+</div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon" >
+<div class="hytit">
+您当前的位置：<a href="#" title="#">卖家中心</a> > <a href="#" title="#">发布商标</a>
+</div>
+<div class="hgrzy">
+<div class="col-xs-12 sell_creat">
+<!--
+<span>发布商标</span><a href="#" title="#" target="_blank">批量发布</a>
+-->
+<ul>
+<li><a href="#" class="selcreat">发布商标</a></li>
+<li><a href="#">发布专利</a></li>
+</ul>
+</div>
+<div class="col-xs-12 sell_creatlist">
+详细填写相关信息，可以帮助您更快找到买家。您还可以批量上传！<a href="#" class="btn btn-warning">立即批量上传</a>
+</div>
+<div class="col-xs-12 fbzlform creat_border" id="yqljs0">
+<form class="form-horizontal" action='a.html' method='post'>
+ <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>商标名称:&nbsp;   </div>
+    <div class="col-xs-6 ">
+    <input type="text" name="zlmcst" class="form-control" placeholder="商标名称" />
+    </div>
+	<div class="col-xs-2 wdfbwz">图形商标则填“图形”</div>
+  </div>
+   <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>商标类别:&nbsp;   </div>
+    <div class="col-xs-2 hjuli">
+<select class="form-control" name="zlflste">
+  <option value="农林渔牧/食品">25-服装鞋帽</option>
+  <option value="建筑/采挖/照明">24-服装鞋帽1</option>
+  <option value="化工/冶金/生物">23-服装鞋帽2</option>
+</select>
+    </div>
+	
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>商标注册号:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlhst" class="form-control" placeholder="专利号" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>权利人:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlhst" class="form-control" placeholder="权利人" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc">商标参考价:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlckjst" class="form-control" placeholder="专利参考价" />
+    </div>
+	<div class="col-xs-2 wdfbwz"><input type="checkbox" name="llsdk"/>该价格包含<span style="color:#FF6600;">1000.00</span>商标转让手续费</div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>申请日期:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="sqrqst" class="form-control" placeholder="申请日期" id="J-xl"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>注册日期:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="sqrqst" class="form-control" placeholder="申请日期" id="J-x2"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc">截止日期:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="sqrqst" class="form-control" placeholder="申请日期" id="J-x3"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc">交易方式:&nbsp;   </div>
+    <div class="col-xs-4 ">
+    <label class="checkbox-inline">
+  <input type="checkbox"  value="tion1">转让
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion2">普通许可
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion3">独占许可
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion4">排他许可
+</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>组合类型:&nbsp;   </div>
+    <div class="col-xs-8 ">
+    <label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option1">中文
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option2">英文
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option3">中文+英文
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option4">图形
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option5">中文+图形
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option6">英文+图形
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option7">组合
+</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>商品服务/项目:&nbsp;   </div>
+    <div class="col-xs-10">
+    <textarea class="form-control" name="zlqren" rows="3" placeholder="请输入服务列表，每项服务以|隔开"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc">商标注册所在地区:&nbsp;   </div>
+	<div class="col-xs-2 hjuli">
+<select class="form-control" name="zlflst2">
+  <option value="农林渔牧/食品">其他</option>
+  <option value="建筑/采挖/照明">中国</option>
+</select>
+    </div>
+    
+  </div>
+  <input type="hidden" name="postthumb1" id="thumb1" value=""/>
+  <input type="hidden" name="postthumb2" id="thumb2" value=""/>
+  <input type="hidden" name="postthumb3" id="thumb3" value=""/>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc"><font>*</font>专利图片:&nbsp;   </div>
+    <div class="col-xs-10 allimg">
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="1"><img id="preview1" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="1"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="1"><img src="images/deletes.jpg"></a></p>    </div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="2"><img id="preview2" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="2"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="2"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="3"><img id="preview3" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="3"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="3"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-2 scrzgmc">卖点展示:&nbsp;   </div>
+    <div class="col-xs-10">
+    <textarea class="form-control" name="mdzs" rows="3" placeholder="为了更好的展示您的商品，建议填写卖点展示"></textarea>
+    </div>
+  </div>
+  
+   <div class="col-xs-12">
+  <button type="submit" class="btn btn-warning weizhidaxiao">确定</button>
+  </div>
+</form>
+</div>
+
+<div class="col-xs-12 fbzlform creat_border display_none" id="yqljs1">
+<form class="form-horizontal" action='a.html' method='post'>
+ <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利名称:&nbsp;   </div>
+    <div class="col-xs-6 ">
+    <input type="text" name="zlmcst" class="form-control" placeholder="专利名称" />
+    </div>
+	
+  </div>
+   <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利分类:&nbsp;   </div>
+    <div class="col-xs-2 hjuli">
+<select class="form-control" name="zlflst">
+  <option value="农林渔牧/食品">农林渔牧/食品</option>
+  <option value="建筑/采挖/照明">建筑/采挖/照明</option>
+  <option value="化工/冶金/生物">化工/冶金/生物</option>
+  <option value="通信/电子/数码">通信/电子/数码</option>
+  <option value="服饰/日用/家电">服饰/日用/家电</option>
+</select>
+    </div>
+	
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>申请号:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlhst" class="form-control" placeholder="申请号" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">专利参考价:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlckjst" class="form-control" placeholder="专利参考价" />
+    </div>
+	<div class="col-xs-2 wdfbwz"><input type="checkbox" name="llsdk"/>该价格包含<span style="color:#FF6600;">1000.00</span>商标转让手续费</div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">申请日期:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="sqrqst" class="form-control" placeholder="申请日期" id="J-x4"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利类型:&nbsp;   </div>
+    <div class="col-xs-4 ">
+    <label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option1">发明
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option2">实用
+</label>
+<label class="radio-inline">
+  <input type="radio" name="RadioOptions" value="option3">外观
+</label>
+    </div>
+  </div>
+   <div class="form-group">
+    <div class="col-xs-1 scrzgmc">交易方式:&nbsp;   </div>
+    <div class="col-xs-4 ">
+    <label class="checkbox-inline">
+  <input type="checkbox"  value="tion1">转让
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion2">普通许可
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion3">独占许可
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox"  value="tion4">排他许可
+</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">专利权人类型:&nbsp;   </div>
+    <div class="col-xs-4 ">
+    <label class="radio-inline">
+  <input type="radio" name="Options" value="geren">个人
+</label>
+<label class="radio-inline">
+  <input type="radio" name="Options" value="qiye">企业
+</label>
+<label class="radio-inline">
+  <input type="radio" name="Options" value="gaoxiao">高校
+</label>
+<label class="radio-inline">
+  <input type="radio" name="Options" value="kyjg">科研机构
+</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利权人:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlhst" class="form-control" placeholder="专利权人" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">发明人:&nbsp;   </div>
+    <div class="col-xs-3 ">
+    <input type="text" name="zlhst" class="form-control" placeholder="发明人" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利详情:&nbsp;   </div>
+    <div class="col-xs-10">
+    <textarea class="form-control" name="mdzs" rows="3" placeholder="为了更好的展示您的商品，建议填写卖点展示"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">代理机构:&nbsp;   </div>
+    <div class="col-xs-3">
+    <input type="text" name="zlhst" class="form-control" placeholder="代理机构" />
+    </div>
+  </div>
+  <input type="hidden" name="postthumb4" id="thumb4" value=""/>
+  <input type="hidden" name="postthumb5" id="thumb5" value=""/>
+  <input type="hidden" name="postthumb6" id="thumb6" value=""/>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利图片:&nbsp;   </div>
+    <div class="col-xs-10 allimg">
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="4"><img id="preview4" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="4"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="4"><img src="images/deletes.jpg"></a></p>    </div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="5"><img id="preview5" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="5"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="5"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="6"><img id="preview6" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="6"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="6"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc">卖点展示:&nbsp;   </div>
+    <div class="col-xs-10">
+    <textarea class="form-control" name="mdzs" rows="3" placeholder="为了更好的展示您的商品，建议填写卖点展示"></textarea>
+    </div>
+  </div>
+   <div class="col-xs-12">
+  <button type="submit" class="btn btn-warning weizhidaxiao">确定</button>
+  </div>
+</form>
+</div>
+</div>
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+<!--上传图片弹框-->
+<div id="zzjs_net" class="zzjs_net"></div>
+<div id="gg" class="tupian">
+<div class="quxiaoss"><a href="javascript:void(0)" ><img src="images/quxiaoss.png"/></a></div>
+     <p>图片上传</p>
+	 <ul>
+	 <li><a href="javascript:void(0)"  class="addbors">本地图片</a></li>
+	 <li><a href="javascript:void(0)" >网络图片</a></li>
+	 </ul>
+	 <div class="quyu" id="bedicon0">
+	 <form id='formFile' name='formFile' method="post" action="aa.html" target='frameFile' enctype="multipart/form-data">
+	 <input id="ff" type="file" name="ff"  class="wanless"/>
+	 </form>
+	 <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>
+	 <br/><br/>
+	 <a href="javascript:void(0)" class="changekk" >上传</a><a href="javascript:void(0)" class="clocks">取消</a></div>
+	 <div class="quyu1" id="bedicon1"><input type="text" name="ffg" id="ljsst" class="wanless" placeholder="http://"/><br/><br/><a href="javascript:void(0)" class="changekk">上传</a><a href="javascript:void(0)" class="clocks">取消</a></div>
+</div>
+<!--上传图片弹框-->
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+$(document).ready(function(){
+
+});
+ laydate({
+            elem: '#J-xl'
+        });
+laydate({
+            elem: '#J-x2'
+        });
+laydate({
+            elem: '#J-x3'
+        });
+laydate({
+            elem: '#J-x4'
+        });
+/*发布商标与专利切换*/
+$('.sell_creat li').click(function(){
+var tt=$(this).index();
+$("div[id*='yqljs']").css('display','none');
+$("#yqljs"+tt).css('display','block');
+$('.sell_creat li a').removeClass('selcreat');
+$(this).find("a").addClass('selcreat');
+})
+/*发布商标与专利切换*/
+
+/*左侧导航切换*/
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+	$('.ddtits').click(function(){
+	$(this).parent().children('.ddxiangqins').slideToggle("slow");
+	})
+});
+/*左侧导航切换*/
+/*本地与网络上传切换*/
+$('.tupian li').click(function(){
+var tt=$(this).index();
+$("div[id*='bedicon']").css('display','none');
+$("#bedicon"+tt).css('display','block');
+$('.tupian li a').removeClass('addbors');
+$(this).find("a").addClass('addbors');
+})
+/*本地与网络上传切换*/
+/*本地图片上传处理*/
+$('.quyu .changekk').click(function(){
+/*
+var tt=$('#ff').val();
+alert(tt);
+var send_data={'id':tt};
+
+$.post("aaaa.php",send_data,function(data,ts){
+if(ts){
+		alert('服务器返回'+data);
+		$('#preview'+xiabiao).attr("src",data);
+		$('#thumb'+xiabiao).val(data);
+		}
+		})
+		clocks();
+*/
+$('#formFile').submit();
+clocks();
+})
+function uploadSuccess(msg) {
+    var re = msg.split('|');
+    if (re[0] == 'success') {
+		$('#preview'+xiabiao).attr('src', re[1]);
+		$('#thumb'+xiabiao).val(re[1]);
+	} else {
+		alert(re[1]);
+	}
+        }
+/*本地图片上传处理*/
+/*网络图片上传处理*/
+$('.quyu1 .changekk').click(function(){
+var tt=$('#ljsst').val();
+var send_data={'file':tt};
+$.post("/Index/Upload/img",send_data,function(data){
+var re = data.split('|');
+    if (re[0] == 'success') {
+		$('#preview'+xiabiao).attr('src', re[1]);
+		$('#thumb'+xiabiao).val(re[1]);
+	} else {
+		alert(re[1]);
+	}
+		})
+		clocks();
+})
+/*网络图片上传处理*/
+/*删除图片*/
+var xbt='';
+$('.deletes').click(function(){
+xbt=$(this).attr('name');
+$('#preview'+xbt).attr("src","images/dendai.png");
+$('#thumb'+xbt).val('');
+})
+/*删除图片*/
+/*开启或关闭上传图片弹框*/
+function clocks(){
+$('#gg').css('display','none');	
+$('#zzjs_net').css('display','none');
+$(document.body).css("overflow","visible");
+}
+$('.quxiaoss a').click(function(){
+clocks();
+})
+$('.quyu .clocks').click(function(){
+clocks();
+})
+$('.quyu1 .clocks').click(function(){
+clocks();
+})
+var xiabiao='';
+$(".posts").click(function(){
+xiabiao=$(this).attr('name');
+$('#gg').css('display','block');
+$('#zzjs_net').css('display','block');
+$(document.body).css('overflow','hidden');
+})
+/*开启或关闭上传图片弹框*/
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+</script>
+</body>
+</html>

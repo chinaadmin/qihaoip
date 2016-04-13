@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>经纪人管理后台首页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<div class="thrwid">
+  <!--头部-->
+  <div class="jjren-admin-top">
+    <div class="thrfloor1">
+      <div class="col-xs-6 jjren-admin-top-left"> <a href="#" ><img src="images/jjren-logo.png" /></a>
+        <p>经纪人管理后台</p>
+      </div>
+      <div class="col-xs-6 jjren-admin-top-right"> 欢迎您 , 张三<a href="#">【退出】</a><a href="#">修改资料</a><a href="#">修改密码</a> </div>
+    </div>
+  </div>
+  <!--头部-->
+  <!--主体-->
+  <div class="thrfloor1">
+    <div class="col-xs-12 jjren-admin-nav">
+      <ul>
+        <li><a href="#" class="jjren-admin-nav-ons">首页</a></li>
+        <li><a href="#">客户管理</a></li>
+        <li><a href="#">业务管理</a></li>
+        <li><a href="#">关联管理</a></li>
+        <li><a href="#">资金提现</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="thrfloor1">
+    <div class="col-xs-12 jjren-admin-index">
+      <div class="col-xs-12 jjren-admin-index-top">
+        <div class="col-xs-12 jjren-admin-index-gogao" id="jjren-admin-index-gogao"> <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+          <div class="col-xs-10 jjren-admin-index-gogaos">
+            <div id="scrollDivstt">
+              <ul>
+                <li><a href="#" title="#" target="_blank" >公告：求购四个字母的英文商标，第...</a></li>
+                <li><a href="#" title="#" target="_blank" >公告：求购四个字母的英文商标，第...</a></li>
+                <li><a href="#" title="#" target="_blank" >公告：求购四个字母的英文商标，第...</a></li>
+                <li><a href="#" title="#" target="_blank" >公告：求购四个字母的英文商标，第...</a></li>
+              </ul>
+            </div>
+          </div>
+          <p><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></p>
+        </div>
+        <div class="jjren-admin-index-table">
+          <table cellpadding="0" cellspacing="0" class="jjren-admin-index-tables">
+            <tbody>
+              <tr>
+                <td class="jjren-admin-index-tables-one">待完善资料</td>
+                <td class="jjren-admin-index-tables-two"><p>商标(<span>101</span>)</p>
+                  <p>版权(<span>10000</span>)</p>
+                  <p>专利(<span>3</span>)</p></td>
+                <td class="jjren-admin-index-tables-one">二级经纪人</td>
+                <td class="jjren-admin-index-tables-two"><p><span>10</span>人</p></td>
+              </tr>
+              <tr>
+                <td class="jjren-admin-index-tables-one">待提交</td>
+                <td class="jjren-admin-index-tables-two"><p>商标(<span>101</span>)</p>
+                  <p>版权(<span>10000</span>)</p>
+                  <p>专利(<span>3</span>)</p></td>
+                <td class="jjren-admin-index-tables-one">三级经纪人</td>
+                <td class="jjren-admin-index-tables-two"><p><span>103</span>人</p></td>
+              </tr>
+              <tr>
+                <td class="jjren-admin-index-tables-one">待审核</td>
+                <td class="jjren-admin-index-tables-two"><p>商标(<span>101</span>)</p>
+                  <p>版权(<span>10000</span>)</p>
+                  <p>专利(<span>3</span>)</p></td>
+                <td class="jjren-admin-index-tables-one">昨日收入</td>
+                <td class="jjren-admin-index-tables-two"><p><span>103</span>元</p>
+                  <p>关联收入<span>103</span>元</p></td>
+              </tr>
+              <tr>
+                <td class="jjren-admin-index-tables-one">被退回</td>
+                <td class="jjren-admin-index-tables-two"><p>商标(<span>101</span>)</p>
+                  <p>版权(<span>10000</span>)</p>
+                  <p>专利(<span>3</span>)</p></td>
+                <td class="jjren-admin-index-tables-one">本月收入</td>
+                <td class="jjren-admin-index-tables-two"><p><span>103</span>元</p>
+                  <p>关联收入<span>103</span>元</p></td>
+              </tr>
+              <tr>
+                <td class="jjren-admin-index-tables-one">已审核</td>
+                <td class="jjren-admin-index-tables-two"><p>商标(<span>101</span>)</p>
+                  <p>版权(<span>10000</span>)</p>
+                  <p>专利(<span>3</span>)</p></td>
+                <td class="jjren-admin-index-tables-one">收入总额</td>
+                <td class="jjren-admin-index-tables-two"><p><span>103</span>元</p>
+                  <p>关联收入<span>103</span>元</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="jjren-admin-index-dkxd"><a href="#"> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+          <p>代客下单</p>
+          </a> </div>
+      </div>
+      <div class="col-xs-12 jjren-admin-index-bottom">
+        <div class="col-xs-12 jjren-admin-index-bottom-title"> 最近30日收入曲线图 </div>
+        <div class="col-xs-12 jjren-admin-index-bottom-shoru" id="main"> </div>
+      </div>
+    </div>
+  </div>
+  <!--主体-->
+  <!--底部-->
+  <div class="jjren-admin-bottom"> 2014-2018 七号网 版权所有 ICP经营性许可证：粤ICP备15024104号-2 </div>
+  <!--底部-->
+</div>
+<script type='text/javascript'>
+/*关闭公告*/
+$('.jjren-admin-index-gogao p span').click(function(){
+$('#jjren-admin-index-gogao').hide();
+})
+/*图表引入*/
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: './dist'
+            }
+        });
+		// 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/line'
+            ],
+       function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+				
+				/*拆线图*/
+				option = {
+  
+    tooltip : {
+        trigger: 'axis'
+	
+    },
+    legend: {
+        data:['总收入','关联收入']
+    },
+ 
+    calculable : true,
+	grid: {
+	     y:40,
+        y2: 40
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2016-03-01','2016-03-05','2016-03-10','2016-03-15','2016-03-20','2016-03-25','2016-03-31']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value} '
+            }
+        }
+    ],
+    series : [
+        {
+            name:'总收入',
+            type:'line',
+			
+            data:[150, 356, 399, 567, 678, 956, 1156],
+		
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'关联收入',
+            type:'line',
+            data:[100, 245, 288, 467, 543, 798, 876],
+			
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+		
+    ]
+};
+// 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+/*图表引入*/
+
+$(document).ready(function(){
+$("#scrollDivstt").Scroll({line:1,speed:550,timer:3000,up:"but_up",down:"but_down"});
+});
+
+/*友情链接*/
+$('.yqlj li').hover(function(){
+var tt=$(this).index();
+$("div[id*='yqljs']").css('display','none');
+$("#yqljs"+tt).css('display','block');
+$('.yqlj li a').removeClass('selst');
+$(this).find("a").addClass('selst');
+})
+/*友情链接*/
+
+</script>
+</body>
+</html>

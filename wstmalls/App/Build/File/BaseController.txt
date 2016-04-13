@@ -1,0 +1,12 @@
+<?php
+namespace {M}\Controller;
+use Common\BaseController;
+class {M}BaseController extends BaseController {
+	/***
+	 * 模块控制器公共类，所有模块下其他控制器类继承此类
+	*/
+	public function _initialize(){
+		parent::_initialize();
+	}
+
+}

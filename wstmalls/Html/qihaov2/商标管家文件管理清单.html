@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>会员中心商标管家文件管理清单</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min-1.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+<div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+<div class="col-xs-10 hnavlist newhnavlist">
+    <ul>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>会员首页</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>资金管理</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>买家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav4.png"/><br/>卖家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav7.png"/><br/>商城管理</a></li>
+<li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav5s.png"/><br/>商标管家</a></li>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav6.png"/><br/>专利管家</a></li>
+</ul>
+  </div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+      <dl>
+		<dt><a href="#" title="#">我的商标</a></dt>
+		<dd><a href="#" title="#" id="hons2" >商标概况</a></dd>
+		<dd><a href="#" title="#" id="hons3" >添加商标</a></dd>
+		<dd><a href="#" title="#" id="hons4" class="onth">国内商标管理</a></dd>
+		<dd><a href="#" title="#" id="hons4">国际商标管理</a></dd>
+	</dl>
+    </div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon">
+<div class="hytit">
+<div class="paleft">您当前的位置：<a href="#" title="#">商标管家</a> > <a href="#" title="#">文件清单</a></div>
+</div>
+<div class="hgrzy">
+<!--查询-->
+<div class="col-xs-12 patjb">
+<div class="col-xs-12 ">
+          <div class="zlyjjyst">文件管理专利<span>90</span>件<a href="#" title="#" class="btn btn-default postsh">一键下载</a><a href="#" title="#" class="btn btn-default postsh">一键删除</a></div>
+          <div class="zlyjjyst1">
+            <form method="post" action="a.html">
+              <div class="formdivs">
+                <input type="text" name="paseach"  class="pasearchs" placeholder="注册号、商标名称、权利人等"/>
+                <input type="submit" value="检索" class="pasubs"/>
+              </div>
+            </form>
+          </div>
+        </div>
+
+</div>
+<!--查询-->
+<!--查询结果-->
+<div class="col-xs-12 pazhlist pazhlists" >
+          <table cellpadding="0" cellspacing="0" class="tablesths">
+            <thead>
+              <tr>
+                <th width="5%"></th>
+                <th width="8%">序号</th>
+				<th width="10%" >类型</th>
+                <th width="12%">注册号</th>
+                <th width="20%">名称</th>
+                <th width="20%">权利人</th>
+				<th width="10%">文件总数</th>
+                <th width="15%"> <div class="fgroupleft">每页显示</div>
+                  <div class="col-xs-5">
+                    <form action="a.html" method="post">
+                      <select class="form-control xianshit" name="zlflst1">
+                        <option value="10">15</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="fgroupleft">件</div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="zlhover" id="trs1">
+                <td width="5%"><a href="#" title="#" class="tabaction tabactiont zltop" rel="1" ><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span></a></td>
+                <td width="8%"><input type="checkbox" name="gwct1" value="1"/>
+                  &nbsp;1</td>
+                <td width="10%" >01类</td>
+                <td width="12%">234345</td>
+                <td width="20%">玩趣味wsldfkg</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" >5件</td>
+                <td width="15%"><a href="#" title="#" class="tabaction tuijianclick1 tabactiont " onClick="tuijianclicks(1,'tuijianclick1');" ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(1);" class="tabaction tabactiont"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+              </tr>
+			  
+              <tr class="fbtuijian zlfbtuijian dakaiones" rel="1">
+                <td colspan="8">
+                  
+                  <div class="col-xs-12 allwidth">
+                   
+                    <div class="col-xs-12 fbtjlist">
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="1">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="2">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="3">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="4">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="5">×</span></div>
+                      </div>
+                      <div class="zltulistt ">
+                        <div class="zltianjia"> <a href="#" title="#" class="posts4"><img src="images/addzshu.jpg"/></a> </div>
+                        上传证书 </div>
+                    </div>
+                  </div>
+                  
+                 
+                </td>
+              </tr>
+			
+			  <tr class="zlhover" id="trs2">
+                <td width="5%"><a href="#" title="#" class="tabaction tabactiont zltop" rel="2" ><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span></a></td>
+                <td width="8%"><input type="checkbox" name="gwct2" value="2"/>
+                  &nbsp;2</td>
+                <td width="10%" >01类</td>
+                <td width="12%">234345</td>
+                <td width="20%">玩趣味wsldfkg</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" >5件</td>
+                <td width="15%"><a href="#" title="#" class="tabaction tuijianclick2 tabactiont " onClick="tuijianclicks(2,'tuijianclick2');" ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(2);" class="tabaction tabactiont"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+              </tr>
+			 
+              <tr class="fbtuijian zlfbtuijian " rel="2">
+                <td colspan="8">
+				 <div class="col-xs-12 allwidth">
+                    <div class="col-xs-12 fbtjlist">
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="1">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="2">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="3">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="4">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="5">×</span></div>
+                      </div>
+                      <div class="zltulistt ">
+                        <div class="zltianjia"> <a href="#" title="#" class="posts4"><img src="images/addzshu.jpg"/></a> </div>
+                        上传证书 </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+			  
+			  <tr class="zlhover" id="trs3">
+                <td width="5%"><a href="#" title="#" class="tabaction tabactiont zltop" rel="3" ><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span></a></td>
+                <td width="8%"><input type="checkbox" name="gwct3" value="3"/>
+                  &nbsp;3</td>
+                <td width="10%" >01类</td>
+                <td width="12%">234345</td>
+                <td width="20%">玩趣味wsldfkg</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" >5件</td>
+                <td width="15%"><a href="#" title="#" class="tabaction tuijianclick3 tabactiont " onClick="tuijianclicks(2,'tuijianclick3');" ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(3);" class="tabaction tabactiont"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+              </tr>
+			  
+              <tr class="fbtuijian zlfbtuijian " rel="3">
+                <td colspan="8">
+                 
+                  <div class="col-xs-12 allwidth">
+                   
+                    <div class="col-xs-12 fbtjlist">
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="1">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="2">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="3">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="4">×</span></div>
+                      </div>
+                      <div class="zltulistt"> <img src="images/zlzshu.jpg"/> 商标注册证书
+                        <div class="zldels"><span rel="5">×</span></div>
+                      </div>
+                      <div class="zltulistt ">
+                        <div class="zltianjia"> <a href="#" title="#" class="posts4"><img src="images/addzshu.jpg"/></a> </div>
+                        上传证书 </div>
+                    </div>
+                  </div>
+                
+                 
+                </td>
+              </tr>
+			  
+			  <tr>
+                <td colspan="8">
+				<div class="paalls"><input type="checkbox" name="alls" value="alls" id="alls"/>&nbsp;全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您选中了<span id="nums">0</span>件专利</div>
+				<div class="seltot"><a href="javascript:" class="btn btn-default paadd paadds">下载</a>  <a href="javascript:" class="btn btn-default adddel">删除</a></div>
+				</td>
+             </tr>
+            </tbody>
+          </table>
+          <div class="daohan">
+            <div class="qiehuan pabluest">
+              <div class="qieleft"><a href="#" title="#"> <<上一页 </a></div>
+              <ul>
+                <li><a href="#" title="#">1</a></li>
+                <li><a href="#" title="#">2</a></li>
+                <li><a href="#" title="#">3</a></li>
+                <li><a href="#" title="#">4</a></li>
+                <li><a href="#" title="#">5</a></li>
+              </ul>
+              <div class="qieleft"><a href="#" title="#">下一页>> </a></div>
+              <div class="tiao"> <span>共58页/1235条</span>
+                <form method="post" action="#" class="fudons">
+                  <input type="text" name="shu" value="1" class="inps"/>
+                  <input type="submit" value="GO" class="sub"/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--查询结果-->
+</div>
+<!--文件上传弹框-->
+      <div id="zzjs_net3" class="zzjs_net"></div>
+      <div id="gg3" class="patupianss patupiansst">
+        <div class="quxiaoss quxiaoss4"><a href="javascript:void(0)" ><img src="images/quxiaosstt.jpg"/></a></div>
+        <p>文件上传</p>
+        <form method="post" class="form-horizontal" action="a.html" enctype="multipart/form-data" target='frameFile'>
+          <div class="col-xs-12 detailtable dashborders">
+            <div class="form-group zllefttt">
+              <div class="col-xs-2 scrzgmc ">文件上传:&nbsp; </div>
+              <div class="col-xs-8 ">
+                <!--
+                <input type="file" class="scrzgmct"  multiple >
+				  -->
+                <input type='text' name='htextfields2' id='hstextfields2' class='txt' placeholder="文件上传"/>
+                <input type='button' class='btnt' value='浏览...' />
+                <input type="file" name="hfileFields2" class="file" multiple="multiple" onChange="document.getElementById('hstextfields2').value=this.value" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-4 col-xs-4">
+                <button type="submit" class="btn btn-default">批量上传</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>
+        <div id="zltulistkk">
+          <form method="post" class="form-horizontal" action="a.html" id="paforms4">
+            <div class="col-xs-12 detailtable dashborders" >
+              <div class="col-xs-12 fbtjlist">
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden1">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="专利注册证书">专利注册证书</option>
+                        <option value="专利注册证书1">专利注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="1">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden2">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="2">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden3">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="3">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden4">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="4">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden5">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="5">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden6">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="6">×</span></div>
+                </div>
+                <div class="zltulistt zltulisttss"> <img src="images/zlzshu.jpg"/>
+                  <input type="hidden" value="images/zlzshu.jpg" name="hidden7">
+                  <div class="form-group zllefttt">
+                    <div class="col-xs-offset-1 col-xs-10 ">
+                      <select class="form-control" name="zlflsts5">
+                        <option value="商标注册证书">商标注册证书</option>
+                        <option value="商标注册证书1">商标注册证书1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="zldels"><span rel="7">×</span></div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="col-xs-12 paquyu1ss"><a href="javascript:void(0)" class="btn btn-primary clocks clocks4">确定</a> <a href="javascript:void(0)" class="btn btn-default quxiao quxiao4">取消</a></div>
+        </div>
+      </div>
+      <!--文件上传弹框-->
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+/*上传成功后显示图片*/
+function uploadSuccess(msg) {
+	var re = msg.split('|');
+    if (re[0] == 'success') {
+		$('#zltulistkk').html(rel[1]);
+	} else {
+		alert(re[1]);
+	}
+}
+/*上传成功后显示图片*/
+/*删除证书*/
+$('.zldels span').click(function(){
+var ids=$(this).attr('rel');
+alert(ids);
+var send_data={'id':ids};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})	
+$(this).parents("div[class*='zltulistt']").remove();
+})
+/*删除证书*/
+/*推荐弹出*/
+/*
+$('.tuijianclick').click(function(){
+
+var tid=$(this).parents('tr').next('.fbtuijian').attr('rel');
+var send_data={'id':tid};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+//alert(tid);
+//window.location.reload();
+}
+
+})
+
+$(this).parents('tr').next('.fbtuijian').slideToggle("slow");
+$(this).parents('tr').next('.fbtuijian').siblings('.fbtuijian').slideUp("slow");
+})
+*/
+function tuijianclicks(tid,classname){
+var send_data={'id':tid};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+$('#trs'+tid).next('.fbtuijian').html(data);
+}
+})
+
+$('.'+classname).parents('tr').next('.fbtuijian').slideToggle("slow");
+$('.'+classname).parents('tr').next('.fbtuijian').siblings('.fbtuijian').slideUp("slow");
+}
+/*推荐弹出*/
+$('.fycolors').hover(function(){
+$(this).find('.others').css('display','block');
+},function(){
+$(this).find('.others').css('display','none');
+}
+)
+/*开启或关闭上传文件弹框*/
+
+function clocks4(){
+$('#gg3').css('display','none');
+$('#zzjs_net3').css('display','none');
+$(document.body).css("overflow","visible");	
+}
+$('.quxiaoss4 a').click(function(){
+clocks4();
+})
+$('.quxiao4').click(function(){
+clocks4();
+})
+$('.paquyu1ss .clocks4').click(function(){
+clocks4();
+$('#paforms4').submit();
+})
+//var xiabiao='';
+$(".posts4").click(function(){
+//xiabiao=$(this).attr('rel');
+$('#gg3').css('display','block');
+$('#zzjs_net3').css('display','block');
+$(document.body).css('overflow','hidden');
+})
+
+/*开启或关闭上传文件弹框*/
+
+/*置顶*/
+$('.zltop').click(function(){
+var hid=$(this).attr('rel');
+//alert(hid);
+var send_data={'id':hid,'name':'top'};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})	
+})
+/*置顶*/
+
+
+/*鼠标放上后显示按钮*/
+$('.zlhover').hover(function(){
+	$(this).find('.tabactiont').css('display','block');
+},function(){
+	$(this).find('.tabactiont').css('display','none');
+  }
+);
+/*鼠标放上后显示按钮*/
+/*选择显示页数*/
+$('.xianshit').change(function(){
+$(this).parent().submit();
+})
+/*选择显示页数*/
+
+
+/*选中数量*/
+function zoushu(){
+	var num=$("input[name*='gwct']:checked").length;
+	$("#nums").html(num);
+	}
+
+/*全选*/
+$('#alls').click(function(){
+if(this.checked){
+$(".tablesths").find("input[name*='gwct']").prop("checked",true);
+}else{
+$(".tablesths").find("input[name*='gwct']").removeAttr("checked");
+}
+zoushu();
+})
+$(".tablesths input[name*='gwct']").click(function(){
+if(!(this.checked)){
+$('#alls').removeAttr("checked");
+}
+zoushu();
+})
+/*全选*/
+
+/*删除*/
+$('.adddel').click(function(){
+var row=new Array();
+var n=0;
+$(".tablesths input[name*='gwct']").each(function(){
+if(this.checked){
+var ids=$(this).val();
+row[n]=ids;
+n++;
+}
+})
+rows = row.join(",");
+alert(rows);
+var send_data={'id':rows};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*删除*/
+
+/*添加*/
+$('.paadd').click(function(){
+var row=new Array();
+var n=0;
+$(".tablesths input[name*='gwct']").each(function(){
+if(this.checked){
+var ids=$(this).val();
+row[n]=ids;
+n++;
+}
+})
+rows = row.join(",");
+alert(rows);
+var send_data={'id':rows};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*添加*/
+
+/*单个添加*/
+function add(id){
+var send_data={'id':id};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+}
+/*单个添加*/
+
+/*单个删除*/
+function del(id){
+var send_data={'id':id};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+}
+/*单个删除*/
+
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+$(document).ready(function(){
+$(".tablesths tr:odd").css('background','#F5F5F5');
+});
+
+$(".tablesths tr:odd").hover(function(){
+	$(this).css('background','#F5F5F5');
+},function(){
+	$(this).css('background','#F5F5F5');
+  }
+);
+$(".tablesths tr:even").hover(function(){
+	$(this).css('background','#F5F5F5');
+},function(){
+	$(this).css('background','none');
+  }
+ 
+);
+
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+$('.dakaiones').slideToggle("slow");
+});
+</script>
+</body>
+</html>

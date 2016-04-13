@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>会员中心卖家中心我的订单</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min-1.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<script type="text/javascript" src="js/laydate.dev.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+<div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+<div class="col-xs-10 hnavlist newhnavlist">
+<ul>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>会员首页</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>资金管理</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>买家中心</a></li>
+<li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav4s.png"/><br/>卖家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav7.png"/><br/>商城管理</a></li>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav5.png"/><br/>商标管家</a></li>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav6.png"/><br/>专利管家</a></li>
+</ul>
+</div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+	<dl>
+		<dt><a href="#" title="#">发布管理</a></dt>
+		<dd><a href="#" title="#" id="hons2" >发布商品</a></dd>
+		<dd><a href="#" title="#" id="hons3" >我的商品</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#" title="#">订单管理</a></dt>
+		<dd><a href="#" title="#" id="hons2" class="onth">我的订单</a></dd>
+	</dl>
+</div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon" >
+<div class="hytit">
+您当前的位置：<a href="#" title="#">卖家中心</a> > <a href="#" title="#">我的订单</a>
+</div>
+<div class="hgrzy">
+<div class="col-xs-12 sell_creat">
+<ul>
+<li><a href="#" class="selcreat">全部商品</a></li>
+<li><a href="#">商标</a></li>
+<li><a href="#">专利</a></li>
+<li><a href="#">专利</a></li>
+</ul>
+</div>
+<div class="col-xs-12 sell_creatlist">
+<table cellpadding="0" cellspacing="0" class="dindan_title">
+<tbody>
+<tr>
+<td width="30%">商品信息</td>
+<td width="14%">买家</td>
+<td width="11%">交易类型</td>
+<td width="11%">应缴总额</td>
+<td width="14%">订单状态</td>
+<td width="20%">操作</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">等待付款</span><br/><a href="#">订单详情</a></td>
+<td width="20%"><span id='divname1'>23时41分后</span><br/><a href="#">订单关闭</a>
+<script type='text/javascript'>
+        $(document).ready(function(){
+         //var runtimes1 = 0;
+        ShowCountDowns(1,1,2400,0);
+      	});
+    </script>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">等待付款</span><br/><a href="#">订单详情</a></td>
+<td width="20%"><span id='divname2'>23时41分后</span><br/><a href="#">订单关闭</a>
+<script type='text/javascript'>
+        $(document).ready(function(){
+         //var runtimes2 = 0;
+        //window.setInterval(function(){ShowCountDowns(2,1,3500)}, interval);
+		ShowCountDowns(2,1,5406,0);
+      	});
+    </script>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">买家已付款</span><br/><a href="#">订单详情</a></td>
+<td width="20%">等待办理手续</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">手续办理完成</span><br/><a href="#">订单详情</a></td>
+<td width="20%">等待买家确认</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">订单已关闭</span><br/><a href="#">订单详情</a></td>
+<td width="20%"><a href="#">删除订单</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-xs-12 dindan_one">
+<table cellpadding="0" cellspacing="0" class="dindan_content">
+<tbody>
+<tr class="first">
+<td colspan="6">订单号：1233445556</td>
+</tr>
+<tr>
+<td width="30%">
+<img src="images/tuxiangst.jpg"/>
+<p>注册号：12334454<br/><span class="price_color">【商标】</span>豆豆魔</p>
+</td>
+<td width="14%" class="posi_tion">张立新
+	<div class="otherss">
+				<p>电话：1598949050</p>
+				<p>邮箱：125665@163.com</p>
+				<p>QQ：123565</p>
+	</div>
+</td>
+<td width="11%">转让</td>
+<td width="11%"><span class="price_color">1000.00</span></td>
+<td width="14%"><span class="price_color">订单已完成</span><br/><a href="#">订单详情</a></td>
+<td width="20%"><a href="#">删除订单</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="daohan">
+            <div class="qiehuan pabluest">
+              <div class="qieleft"><a href="#" title="#"> <<上一页 </a></div>
+              <ul>
+                <li><a href="#" title="#">1</a></li>
+                <li><a href="#" title="#">2</a></li>
+                <li><a href="#" title="#">3</a></li>
+                <li><a href="#" title="#">4</a></li>
+                <li><a href="#" title="#">5</a></li>
+              </ul>
+              <div class="qieleft"><a href="#" title="#">下一页>> </a></div>
+              <div class="tiao"> <span>共58页/1235条</span>
+                <form method="post" action="#" class="fudons">
+                  <input type="text" name="shu" value="1" class="inps"/>
+                  <input type="submit" value="GO" class="sub"/>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+</div>
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+/*倒计时*/
+
+function ShowCountDowns(pid,status,lefttime,runtimes){
+var leftTime= lefttime*1000-runtimes*1000;
+if(leftTime<=0){
+	var cc = document.getElementById('divname'+pid);
+	window.location.reload();
+} else {
+	var leftsecond = parseInt(leftTime/1000); 
+	var day1=parseInt(leftsecond/(24*60*60*6)); 
+	var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+	var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+	var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
+	var cc = document.getElementById('divname'+pid); 
+	cc.innerHTML =hour+"小时"+minute+"分"+second+"秒"; 
+}
+runtimes++;
+setTimeout(function(){ShowCountDowns(pid,status,lefttime,runtimes)},1000);
+}
+/*倒计时*/
+$('.posi_tion').hover(function(){
+$(this).find('.otherss').css('display','block');
+},function(){
+$(this).find('.otherss').css('display','none');
+}
+)
+/*发布商标与专利切换*/
+$('.sell_creat li').click(function(){
+$('.sell_creat li a').removeClass('selcreat');
+$(this).find("a").addClass('selcreat');
+})
+/*发布商标与专利切换*/
+/*选择显示页数*/
+$('.xianshit').change(function(){
+$(this).parent().submit();
+})
+/*选择显示页数*/
+
+/*选择推荐*/
+$('.xianshits').change(function(){
+var mes=$(this).val();
+var send_data={'id':mes};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*选择推荐*/
+
+/*全选*/
+$('.scxzall input').click(function(){
+var xb=$(this).attr('rel');
+if(this.checked){
+$("#fbtable"+xb).find("input[name*='gwct']").attr("checked","checked");
+}else{
+$("#fbtable"+xb).find("input[name*='gwct']").removeAttr("checked");
+}
+})
+$(".tablesth input[name*='gwct']").click(function(){
+var xb=$(this).parents('.tablesth').attr('rel');
+if(!(this.checked)){
+$('#selall'+xb).removeAttr("checked");
+}
+})
+/*全选*/
+/*删除*/
+$('.salldel').click(function(){
+var xb=$(this).attr('name');
+var row=new Array();
+var n=0;
+$("#fbtable"+xb).find("input[name*='gwct']").each(function(){
+if(this.checked){
+var ids=$(this).val();
+row[n]=ids;
+n++;
+}
+})
+rows = row.join(",");
+alert(rows);
+var send_data={'id':rows};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*删除*/
+
+/*单个删除*/
+$('.fbdel').click(function(){
+var hval=$(this).parents('tr').find("input[name*='gwct']").val();
+alert(hval);
+var send_data={'id':hval};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})
+})
+/*单个删除*/
+
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+        $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+});
+
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+</script>
+</body>
+</html>

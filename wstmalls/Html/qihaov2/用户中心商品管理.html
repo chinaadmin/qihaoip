@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>用户中心商品管理</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+  <div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+  <div class="col-xs-10 hnavlist newhnavlist">
+    <ul>
+      <li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>
+        会员首页</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>
+        资金管理</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>
+        买家中心</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav4.png"/><br/>
+        卖家中心</a></li>
+      <li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav7s.png"/><br/>
+        商城管理</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav5.png"/><br/>
+        商标管家</a></li>
+      <li><a href="#" title="#" target="_blank" ><img src="images/nav6.png"/><br/>
+        专利管家</a></li>
+    </ul>
+  </div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+	<dl>
+		<dt><a href="#" title="#">商城管理</a></dt>
+		<dd><a href="#" title="#" id="hons3" >商城资料</a></dd>
+		<dd><a href="#" title="#" id="hons2" >客服设置</a></dd>
+		<dd><a href="#" title="#" id="hons2" >商城装饰</a></dd>
+		<dd><a href="#" title="#" id="hons2" class="onth">商品管理</a></dd>
+	</dl>
+</div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon">
+<div class="hytit">
+您当前的位置：<a href="#" title="#">商城管理</a> > <a href="#" title="#">商品管理</a>
+</div>
+<div class="hgrzy">
+<div class="col-xs-offset-3 col-xs-6 shop_manager">
+<div class="col-xs-12">请到“<a href="#" title="#">卖家中心</a> > <a href="#" title="#">我的发布</a>”中进行商品管理</div>
+<div class="col-xs-12 shop_alink"><a href="#" title="#" class="btn btn-warning">立即管理</a></div>
+<div class="col-xs-12">当您的商标或专利数量不够时,您也可以手动隐藏模块</div>
+<div class="col-xs-12 shop_alink" ><a href="#" title="#" class="btn btn-primary" id="hiddensb" >隐藏商标模块</a> <a href="#" title="#" class="btn btn-primary" id="hiddenzl" >隐藏专利模块</a> <a href="#" title="#" class="btn btn-primary" id="showtuijian" >显示特别推荐模块</a></div>
+</div>
+</div>
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+/*隐藏或显示商标*/
+var ff=1;
+$('#hiddensb').click(function(){
+if(ff==1){
+alert(ff);
+var send_data={'id':ff};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+ff=0;
+}else{
+alert(ff);
+var send_data={'id':ff};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+ff=1;
+}
+})
+/*隐藏或显示商标*/
+
+/*隐藏或显示专利*/
+var gg=1;
+$('#hiddenzl').click(function(){
+if(gg==1){
+//alert(ff);
+var send_data={'id':gg};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+ff=0;
+}else{
+//alert(ff);
+var send_data={'id':gg};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+ff=1;
+}
+})
+/*隐藏或显示专利*/
+/*隐藏或显示推荐*/
+var kk=1;
+$('#showtuijian').click(function(){
+if(kk==1){
+//alert(ff);
+var send_data={'id':kk};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+kk=0;
+}else{
+//alert(ff);
+var send_data={'id':kk};
+$.post("aaaa.php",send_data,function(data,ts){
+
+})
+kk=1;
+}
+})
+/*隐藏或显示推荐*/
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+//alert(tu+'s.png');
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+//alert(tu+'.png');
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+$(document).ready(function(){
+
+});
+/*左侧导航切换*/
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+	$('.ddtits').click(function(){
+	$(this).parent().children('.ddxiangqins').slideToggle("slow");
+	})
+});
+/*左侧导航切换*/
+
+</script>
+</body>
+</html>

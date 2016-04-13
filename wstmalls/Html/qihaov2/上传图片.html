@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>用户中心发布专利</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="js/laydate.dev.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+
+<!--logo与导航-->
+
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+
+<form class="form-horizontal" action='a.html' method='post'>
+  <input type="hidden" name="postthumb1" id="thumb1" value=""/>
+  <input type="hidden" name="postthumb2" id="thumb2" value=""/>
+  <input type="hidden" name="postthumb3" id="thumb3" value=""/>
+  <div class="form-group">
+    <div class="col-xs-1 scrzgmc"><font>*</font>专利图片:&nbsp;   </div>
+    <div class="col-xs-10 allimg">
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="1"><img id="preview1" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="1"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="1"><img src="images/deletes.jpg"></a></p>    </div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="2"><img id="preview2" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="2"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="2"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+	<div class="hsqtp">
+    <div class="yulan"><a href="javascript:void(0)" class="posts" name="3"><img id="preview3" width="140" height="120" src="images/dendai.png"/></a></div>
+	<div class="dianji"><p><a href="javascript:void(0)" class="posts" name="3"><img src="images/shanchuan.png"></a><a href="javascript:void(0)" class="selects"><img src="images/selects.png"></a><a href="javascript:void(0)" class="deletes" name="3"><img src="images/deletes.jpg"></a></p></div>
+	</div>
+    </div>
+  </div>
+</form>
+
+<!--右侧内容-->
+<!--上传图片弹框-->
+<div id="zzjs_net" class="zzjs_net"></div>
+<div id="gg" class="tupian">
+<div class="quxiaoss"><a href="javascript:void(0)" ><img src="images/quxiaoss.png"/></a></div>
+     <p>图片上传</p>
+	 <ul>
+	 <li><a href="javascript:void(0)"  class="addbors">本地图片</a></li>
+	 <li><a href="javascript:void(0)" >网络图片</a></li>
+	 </ul>
+	 <div class="quyu" id="bedicon0">
+	 <form id='formFile' name='formFile' method="post" action="/Index/Upload/img" target='frameFile' enctype="multipart/form-data">
+	 <input id="ff" type="file" name="file"  class="wanless"/>
+	 </form>
+	 <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>
+	 <br/><br/>
+	 <a href="javascript:void(0)" class="changekk" >上传</a><a href="javascript:void(0)" class="clocks">取消</a>
+	 </div>
+	 <div class="quyu1" id="bedicon1"><input type="text" name="ffg" id="ljsst" class="wanless" placeholder="http://"/><br/><br/><a href="javascript:void(0)" class="changekk">上传</a><a href="javascript:void(0)" class="clocks">取消</a></div>
+</div>
+<!--上传图片弹框-->
+
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+/*本地与网络上传切换*/
+$('.tupian li').click(function(){
+var tt=$(this).index();
+$("div[id*='bedicon']").css('display','none');
+$("#bedicon"+tt).css('display','block');
+$('.tupian li a').removeClass('addbors');
+$(this).find("a").addClass('addbors');
+})
+/*本地与网络上传切换*/
+/*本地图片上传处理*/
+$('.quyu .changekk').click(function(){
+$('#formFile').submit();
+clocks();
+})
+function uploadSuccess(msg) {
+	var re = msg.split('|');
+    if (re[0] == 'success') {
+		$('#preview'+xiabiao).attr('src', re[1]);
+		$('#thumb'+xiabiao).val(re[1]);
+	} else {
+		alert(re[1]);
+	}
+}
+/*本地图片上传处理*/
+/*网络图片上传处理*/
+$('.quyu1 .changekk').click(function(){
+var tt=$('#ljsst').val();
+alert(tt);
+var send_data={'img':tt};
+$.post("/Index/Upload/webimg",send_data,function(data){
+	var re = data.split('|');
+    if (re[0] == 'success') {
+		$('#preview'+xiabiao).attr('src', re[1]);
+		$('#thumb'+xiabiao).val(re[1]);
+	} else {
+		alert(re[1]);
+	}
+	clocks();
+})
+})
+/*网络图片上传处理*/
+/*删除图片*/
+var xbt='';
+$('.deletes').click(function(){
+xbt=$(this).attr('name');
+$('#preview'+xbt).attr("src","images/dendai.png");
+$('#thumb'+xbt).val('');
+})
+/*删除图片*/
+/*开启或关闭上传图片弹框*/
+function clocks(){
+$('#gg').css('display','none');
+$('#zzjs_net').css('display','none');
+$(document.body).css("overflow","visible");	
+}
+$('.quxiaoss a').click(function(){
+clocks();
+})
+$('.quyu .clocks').click(function(){
+clocks();
+})
+$('.quyu1 .clocks').click(function(){
+clocks();
+})
+var xiabiao='';
+$(".posts").click(function(){
+xiabiao=$(this).attr('name');
+$('#gg').css('display','block');
+$('#zzjs_net').css('display','block');
+$(document.body).css('overflow','hidden');
+})
+/*开启或关闭上传图片弹框*/
+</script>
+</body>
+</html>

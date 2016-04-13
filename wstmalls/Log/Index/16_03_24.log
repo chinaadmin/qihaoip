@@ -1,0 +1,1563 @@
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `qh_menu` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name`,`title`,`alt`,`link`,`about` FROM `qh_menu` WHERE `groupid` = 1 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `qh_articles` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_articles` WHERE `upid` = 3 ORDER BY sort desc  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_article` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 162 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 163 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 164 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 165 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 256 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `qh_links` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_links` WHERE `id` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_link` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_link` WHERE `groupid` = 1 AND `state` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_config` [ RunTime:0.0130s ]
+SQL: SELECT `name`,`data` FROM `qh_config` WHERE ( groupid=2 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `qh_items` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `tmpa` = 1 AND `level` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 48 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 188  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 189  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 190  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 191  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 192  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 193  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 32 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 200  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 201  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 202  [ RunTime:0.0460s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 205  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 363  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 364  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 10 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 206  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 207  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 208  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 209  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 210  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 41 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 44 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 66 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 55 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 52 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 56 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 51 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 53 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 50 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 54 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 49 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 57 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 67 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 65 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 64 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 63 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 62 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 61 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 60 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 59 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 58 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 68 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 47 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 34 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 33 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 31 ORDER BY sort desc LIMIT 8   [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 30 ORDER BY sort desc LIMIT 8   [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 29 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 28 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 11 ORDER BY sort desc LIMIT 8   [ RunTime:0.0160s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 9 ORDER BY sort desc LIMIT 8   [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 35 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 36 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 46 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 45 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 43 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 42 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 40 ORDER BY sort desc LIMIT 8   [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 39 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 38 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 37 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 8 ORDER BY sort desc LIMIT 8   [ RunTime:0.0260s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `tmpa` = 2 AND `level` = 1 ORDER BY sort desc  [ RunTime:0.0250s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 82 ORDER BY sort desc LIMIT 8   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 120  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 123  [ RunTime:0.0210s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 124  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 125  [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 19 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 20  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 21  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 23  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 27  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 83 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 126  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 127  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 128  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 130  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 131  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 132  [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 85 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 146  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 147  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 149  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 150  [ RunTime:0.0190s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 81 ORDER BY sort desc LIMIT 8   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 110  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 111  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 112  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 113  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 114  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 115  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 117  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 119  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 80 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 108  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 84 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 135  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 12 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 16  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 79 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 103  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 78 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 87  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 90  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 91  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 93  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 94  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 99  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 86 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_ad` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_ad` WHERE ( groupid = 28 and state = 1 and (endtime =0 or endtime >1458812110) and (starttime = 0 or starttime < 1458812110) ) ORDER BY sort desc,id desc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_ad` WHERE ( groupid = 158 and state = 1 and (endtime =0 or endtime >1458812110) and (starttime = 0 or starttime < 1458812110) ) ORDER BY sort desc,id desc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE ( state=1 and parentid=0 and tmpa=1 ) ORDER BY sort desc,id desc LIMIT 4   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE ( state=1 and parentid=0 and tmpa=2 ) ORDER BY sort desc,id desc LIMIT 4   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 1 AND `tuijian` = 1 AND `state` = 1 ORDER BY tmscreening1 desc,id desc  [ RunTime:0.1000s ]
+SQL: SELECT `id`,`title`,`img` FROM `qh_item` WHERE ( tmpa=2 and state=1 and tuijian=1 ) ORDER BY tmscreening1 desc,id DESC  [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `qh_items` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `qh_items` WHERE `tmpa` = 1 AND `state` = 1 AND `parentid` = 0 ORDER BY sort DESC LIMIT 4   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 1 AND `state` = 1 AND `groupid` = 48 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 1 AND `state` = 1 AND `groupid` = 32 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0700s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 1 AND `state` = 1 AND `groupid` = 10 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0720s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 1 AND `state` = 1 AND `groupid` = 41 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0850s ]
+SQL: SHOW COLUMNS FROM `qh_ad` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_ad` WHERE ( state=1 and (endtime =0 or endtime >1458812111) and (starttime = 0 or starttime < 1458812111) and groupid=171 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0160s ]
+SQL: SELECT m.id,m.title,m.img,m.tmno,s.id as sid,s.name FROM qh_item as m INNER JOIN qh_items as s ON s.id = m.groupid  WHERE m.tmpa = '1' AND m.tuijian = '2' AND m.state = '1' ORDER BY m.tmscreening1 desc,m.id desc LIMIT 6   [ RunTime:0.0720s ]
+SQL: SELECT * FROM `qh_items` WHERE `tmpa` = 2 AND `state` = 1 AND `parentid` = 0 ORDER BY sort DESC LIMIT 4   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 2 AND `state` = 1 AND `groupid` = 82 AND `tmscreening` = 2 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 2 AND `state` = 1 AND `groupid` = 19 AND `tmscreening` = 2 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0280s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 2 AND `state` = 1 AND `groupid` = 83 AND `tmscreening` = 2 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.1790s ]
+SQL: SELECT * FROM `qh_item` WHERE `tmpa` = 2 AND `state` = 1 AND `groupid` = 85 AND `tmscreening` = 2 ORDER BY tmscreening desc,id asc LIMIT 5   [ RunTime:0.0300s ]
+SQL: SELECT * FROM `qh_ad` WHERE ( state=1 and (endtime =0 or endtime >1458812111) and (starttime = 0 or starttime < 1458812111) and groupid=172 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SELECT m.id,m.title,m.img,s.id as sid,s.name FROM qh_item as m INNER JOIN qh_items as s ON s.id = m.groupid  WHERE ( m.tmpa=2 and m.state=1 and m.tuijian=2 ) ORDER BY m.tmscreening1 desc,m.id DESC LIMIT 6   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `qh_article` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`title`,`keywords`,`img`,`addtime`,`date`,`description` FROM `qh_article` WHERE `state` = 1 AND `hot` = 2 AND `groupid` NOT IN ('2','278') ORDER BY addtime desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_articles` WHERE `upid` = 258  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: classid D:\wamps\www\wstmall\App\Index\Controller\IndexController.class.php 第 413 行.
+SQL: SELECT `id`,`title`,`keywords`,`addtime`,`date`,`description` FROM `qh_article` WHERE `state` = 1 AND `hot` <> '2' AND ( `groupid` NOT IN ('2','278') AND `groupid` NOT IN ('259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275')  ) ORDER BY addtime desc LIMIT 10   [ RunTime:0.0150s ]
+SQL: SELECT `id`,`title`,`keywords`,`img`,`addtime`,`date` FROM `qh_article` WHERE `state` = 1 AND `hot` = 2 AND `groupid` = 2 ORDER BY addtime desc LIMIT 11   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_links` WHERE `id` IN ('1','2','9','10') ORDER BY sort desc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_link` WHERE `groupid` = 1 AND `state` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_link` WHERE `groupid` = 9 AND `state` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_link` WHERE `groupid` = 10 AND `state` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_link` WHERE `groupid` = 2 AND `state` = 1 ORDER BY sort desc,id desc  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1210366876.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/11/30/0449257972.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1215129753.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1213472744.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1211469900.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1208055492.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1206442089.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201507/01/15-07-08-99-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201507/01/15-12-21-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1205048793.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201507/01/14-56-46-47-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/11/16-47-31-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/15/09-03-44-65-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/15/09-06-34-88-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/15/09-52-23-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/11/16-38-10-34-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/11/16-26-45-40-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/11/14-23-07-51-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/03/12-01-21-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/03/11-30-59-86-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201505/11/17-35-00-84-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201506/11/16-35-33-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201505/11/17-18-00-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/30/17-33-00-56-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/30/17-24-28-15-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-22/0929276036.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/30/17-11-22-77-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/30/16-51-10-87-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-17/1030431943.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/29/16-34-26-62-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/29/16-37-41-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201505/12/09-54-08-78-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/29/16-20-37-56-2.jpg.middle.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201505/08/10-37-37-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1216475727.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201505/12/10-19-46-41-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /Upload/Img/12/04/0515564422.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:12+08:00 ] 127.0.0.1 /file/upload/201504/29/16-31-34-98-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1123586299.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/0958476727.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1003357238.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1149354414.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1019416855.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/03/14-49-40-83-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.011001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1005144204.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-09/0505372682.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1006326100.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1010295504.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1121309465.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1013496203.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1122325572.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1119538615.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1118512003.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1017343831.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1204424712.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1201358244.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1200307500.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1152285517.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1120399940.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1133534141.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1130277934.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1018373257.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1133036391.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1127045335.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1110064632.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1014526492.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1127531544.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/0222267868.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/2015-12-24/1221362020.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/0212515701.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-01/0455227624.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-11/0609428567.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-02/0427527090.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-16/0539443461.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-19/0343564238.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-01/0921295304.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-03/1210331234.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-22/0500525978.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-05/0502161678.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-14/0303502140.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0449105556.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1211469900.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0449415097.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0451127091.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0453041136.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/15/09-03-44-65-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0453249036.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0513271298.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/30/17-24-28-15-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0401297035.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-29/1114536236.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0401079405.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-09/0505372682.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0402231325.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1133036391.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0448061534.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1127531544.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0404359949.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0405272174.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0401506564.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0403021767.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/02/0436412055.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/2015-12-22/0604521757.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0505365559.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/20/1127045335.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0513557089.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/2015-12-30/0500328910.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/2015-12-22/0528536438.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/2015-12-23/1016297877.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-03/0248238558.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1213472744.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/11/30/0449257972.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1215129753.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-01/0456076322.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036002s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1206442089.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1205048793.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1210366876.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1208055492.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201507/01/15-07-08-99-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201507/01/15-12-21-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/15/09-52-23-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/15/09-06-34-88-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/11/16-47-31-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201507/01/14-56-46-47-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/11/14-23-07-51-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/11/16-26-45-40-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/11/16-38-10-34-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201505/12/09-54-08-78-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201505/11/17-35-00-84-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/03/11-30-59-86-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/03/12-01-21-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/30/17-33-00-56-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201505/11/17-18-00-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/11/16-35-33-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-17/1030431943.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/30/16-51-10-87-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/30/17-11-22-77-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/29/16-37-41-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/29/16-31-34-98-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-22/0929276036.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1216475727.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/29/16-20-37-56-2.jpg.middle.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201504/29/16-34-26-62-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201505/08/10-37-37-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201506/03/14-49-40-83-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /file/upload/201505/12/10-19-46-41-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/0958476727.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/12/04/0515564422.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1019416855.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1123586299.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/10/26/1149354414.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1005144204.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:13+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1003357238.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1006326100.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1122325572.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1010295504.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1121309465.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1014526492.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1013496203.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1120399940.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1118512003.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1017343831.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1204424712.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1119538615.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1133534141.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1200307500.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-10/1018373257.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1130277934.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1152285517.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1110064632.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/26/0222267868.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-19/0343564238.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/20/1201358244.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-17/0238132597.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-29/0639377766.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-20/0544127400.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/11/30/0449105556.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-04/0953367451.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1215129753.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1211469900.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1206442089.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1213472744.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201507/01/15-07-08-99-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1208055492.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201507/01/14-56-46-47-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1210366876.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/15/09-52-23-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1205048793.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/15/09-03-44-65-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/11/16-47-31-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/15/09-06-34-88-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/11/16-38-10-34-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201507/01/15-12-21-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/11/14-23-07-51-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201505/12/09-54-08-78-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/03/12-01-21-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/11/16-26-45-40-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/11/16-35-33-18-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/03/11-30-59-86-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/30/17-33-00-56-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-22/0929276036.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201505/11/17-18-00-92-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/30/17-24-28-15-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/02/2016-02-17/1030431943.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201505/11/17-35-00-84-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/29/16-34-26-62-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/30/16-51-10-87-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/29/16-37-41-13-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/03/2016-03-24/1216475727.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/29/16-31-34-98-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/30/17-11-22-77-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201504/29/16-20-37-56-2.jpg.middle.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/12/04/0515564422.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201505/08/10-37-37-80-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201505/12/10-19-46-41-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/26/1123586299.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/26/1149354414.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /Upload/Img/10/26/1019416855.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:35:14+08:00 ] 127.0.0.1 /file/upload/201506/03/14-49-40-83-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:35:56+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_menu` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name`,`title`,`alt`,`link`,`about` FROM `qh_menu` WHERE `groupid` = 4 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_articles` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_articles` WHERE `upid` = 3 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_article` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 162 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 163 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 164 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 165 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_article` WHERE `groupid` = 256 AND `state` = 1 ORDER BY sort desc  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_config` [ RunTime:0.0130s ]
+SQL: SELECT `name`,`data` FROM `qh_config` WHERE ( groupid=2 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_items` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `tmpa` = 1 AND `level` = 1 ORDER BY sort desc  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 48 ORDER BY sort desc LIMIT 8   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 188  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 189  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 190  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 191  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 192  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 193  [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 32 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 200  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 201  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 202  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 205  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 363  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 364  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 10 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 206  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 207  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 208  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 209  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 210  [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 41 ORDER BY sort desc LIMIT 8   [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 44 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 66 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 55 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 52 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 56 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 51 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 53 ORDER BY sort desc LIMIT 8   [ RunTime:0.0160s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 50 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 54 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 49 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 57 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 67 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 65 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 64 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 63 ORDER BY sort desc LIMIT 8   [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 62 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 61 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 60 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 59 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 58 ORDER BY sort desc LIMIT 8   [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 68 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 47 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 34 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 33 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 31 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 30 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 29 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 28 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 11 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 9 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 35 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 36 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 46 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 45 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 43 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 42 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 40 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 39 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 38 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 37 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 8 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `tmpa` = 2 AND `level` = 1 ORDER BY sort desc  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 82 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 120  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 123  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 124  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 125  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 19 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 20  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 21  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 23  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 27  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 83 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 126  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 127  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 128  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 130  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 131  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 132  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 85 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 146  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 147  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 149  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 150  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 81 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 110  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 111  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 112  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 113  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 114  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 115  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 117  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 119  [ RunTime:0.0110s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 80 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 108  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 84 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 135  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 12 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 16  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 79 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 103  [ RunTime:0.0120s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 78 ORDER BY sort desc LIMIT 8   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 87  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 90  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 91  [ RunTime:0.0180s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 93  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 94  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_items` WHERE `parentid` = 99  [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `qh_items` WHERE `state` = 1 AND `level` = 2 AND `parentid` = 86 ORDER BY sort desc LIMIT 8   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keywords D:\wamps\www\wstmall\App\Runtime\Cache\Index\f54c18580ca077295f605712f97eac5e.php 第 5 行.
+NOTIC: [8] Undefined index: description D:\wamps\www\wstmall\App\Runtime\Cache\Index\f54c18580ca077295f605712f97eac5e.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:35:56+08:00 ] 127.0.0.1 /User/captcha/id/5438.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:33+08:00 ] 127.0.0.1 /Index/User/captcha_chk.html?captcha=usz6&_=1458812193693
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:34+08:00 ] 127.0.0.1 /User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_member` WHERE `username` = '7hip' AND `state` = 1 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_jifen` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `qh_jifen` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_jifenlog` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_jifenlog` WHERE `userid` = 2 AND `typeid` = 1 AND `date` = '160324' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `qh_member` WHERE `id` = 2 AND `idcardchk` = 3 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_members` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `qh_members` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-07/1002487310.GIF
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/01/15/11985576.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-07/1002487310.GIF
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:36:37+08:00 ] 127.0.0.1 /Upload/Img/01/15/11985576.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-09/0505372682.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /file/upload/201507/20/10-08-20-75-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /file/upload/201507/20/09-58-03-23-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /file/upload/201507/20/09-58-03-23-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /file/upload/201507/20/10-08-20-75-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-09/0505372682.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:22+08:00 ] 127.0.0.1 /Upload/Img/10/20/1142117975.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:22+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:22+08:00 ] 127.0.0.1 /Upload/Img/01/2016-01-09/0505372682.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:29+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T17:37:39+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T18:07:38+08:00 ] 127.0.0.1 /Upload/Img/12/02/0250513530.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

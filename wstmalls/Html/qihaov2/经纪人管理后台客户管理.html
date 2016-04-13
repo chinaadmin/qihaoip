@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>客户管理</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<div class="thrwid">
+  <!--头部-->
+  <div class="jjren-admin-top">
+    <div class="thrfloor1">
+      <div class="col-xs-6 jjren-admin-top-left"> <a href="#" ><img src="images/jjren-logo.png" /></a>
+        <p>经纪人管理后台</p>
+      </div>
+      <div class="col-xs-6 jjren-admin-top-right"> 欢迎您 , 张三<a href="#">【退出】</a><a href="#">修改资料</a><a href="#">修改密码</a> </div>
+    </div>
+  </div>
+  <!--头部-->
+  <!--主体-->
+  <div class="thrfloor1">
+    <div class="col-xs-12 jjren-admin-nav">
+      <ul>
+        <li><a href="#" class="jjren-admin-nav-ons">首页</a></li>
+        <li><a href="#">客户管理</a></li>
+        <li><a href="#">业务管理</a></li>
+        <li><a href="#">关联管理</a></li>
+        <li><a href="#">资金提现</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="thrfloor1">
+    <div class="col-xs-12 jjren-admin-index">
+      <div class="jjren-admin-left">
+        <ul>
+          <li><a href="#" class="jjren-admin-left-ons">客户列表</a></li>
+          <!--
+	  <li><a href="#">客户列表1</a></li>
+	  -->
+        </ul>
+      </div>
+      <div class="jjren-admin-right">
+        <div class="col-xs-12 jjren-admin-right-con">
+          <div class="col-xs-12 jjren-admin-right-search">
+            <form class="form-horizontal" action='a.html' method='post'>
+              <div class="form-group">
+                <div class="col-xs-1 jjren-admin-right-scrzgmc">企业名称:&nbsp; </div>
+                <div class="col-xs-2 ">
+                  <input type="text" name="zlmcst" class="form-control input-sm" placeholder="企业名称" />
+                </div>
+                <div class="col-xs-1 jjren-admin-right-scrzgmc">联系人:&nbsp; </div>
+                <div class="col-xs-2 ">
+                  <input type="text" name="zlmcst" class="form-control input-sm" placeholder="联系人" />
+                </div>
+                <div class="col-xs-1 jjren-admin-right-scrzgmc">电话:&nbsp; </div>
+                <div class="col-xs-2 ">
+                  <input type="text" name="zlmcst" class="form-control input-sm" placeholder="电话" />
+                </div>
+                <div class="col-xs-3 jjren-admin-weizhigan">
+                  <button type="submit" class="btn btn-warning btn-sm">搜索</button>
+                  <button type="reset" class="btn btn-primary btn-sm">清除</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-12 jjren-admin-right-table" >
+            <table cellpadding="0" cellspacing="0" class="jjren-admin-right-tables">
+              <thead>
+                <tr>
+                  <th width="20%">账号</th>
+                  <th width="35%">企业名称</th>
+                  <th width="15%">联系人</th>
+                  <th width="15%">电话</th>
+                  <th width="15%">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				<tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				 <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				<tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				<tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				 <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				<tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				<tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+                <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+				 <tr>
+                  <td width="20%">zscq1223</td>
+                  <td width="35%">深圳市腾讯计算机系统有限公司</td>
+                  <td width="15%">张三</td>
+                  <td width="15%">15933456345</td>
+                  <td width="15%"><a href="#">查看</a><a href="#" class="jjren-admin-right-tables-a">代客下单</a></td>
+                </tr>
+              </tbody>
+            </table>
+			<div class="daohan jjren-admin-right-daohan">
+            <div class="qiehuan pabluest">
+              <div class="qieleft"><a href="#" title="#">首页</a></div>
+              <ul>
+                <li><a href="#" title="#">1</a></li>
+                <li><a href="#" title="#">2</a></li>
+                <li><a href="#" title="#">3</a></li>
+                <li><a href="#" title="#">4</a></li>
+                <li><a href="#" title="#">5</a></li>
+              </ul>
+              <div class="qieleft"><a href="#" title="#">尾页</a></div>
+              <div class="tiao"> <span>共58页/1235条</span>
+                <form method="post" action="#" class="fudons">
+                  <input type="text" name="shu" value="1" class="inps"/>
+                  <input type="submit" value="GO" class="sub"/>
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--主体-->
+  <!--底部-->
+  <div class="jjren-admin-bottom"> 2014-2018 七号网 版权所有 ICP经营性许可证：粤ICP备15024104号-2 </div>
+  <!--底部-->
+</div>
+<script type='text/javascript'>
+/*关闭公告*/
+$('.jjren-admin-right-tables tr').hover(function(){
+$(this).css('background','#ebf4ff');
+},function(){
+$(this).css('background','#ffffff');
+})
+
+
+$(document).ready(function(){
+$("#scrollDivstt").Scroll({line:1,speed:550,timer:3000,up:"but_up",down:"but_down"});
+});
+
+/*友情链接*/
+$('.yqlj li').hover(function(){
+var tt=$(this).index();
+$("div[id*='yqljs']").css('display','none');
+$("#yqljs"+tt).css('display','block');
+$('.yqlj li a').removeClass('selst');
+$(this).find("a").addClass('selst');
+})
+/*友情链接*/
+
+</script>
+</body>
+</html>

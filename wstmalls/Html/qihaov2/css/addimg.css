@@ -1,0 +1,25 @@
+div.clearfix{clear:both;}
+div.dialog{display:none;position: fixed;top:200px;left:550px;background: #ffffff;width:650px;height:370px;z-index:2000;border:1px solid #006AED;padding:25px;}
+div.modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1030;background-color: #000;opacity: 0.5;}
+.jcrop-holder #preview-pane {
+	display: block;
+	position: absolute;
+	z-index: 2000;
+	top: 10px;
+	right: -240px;
+	padding: 6px;
+	background-color: white;
+}
+
+#preview-pane .preview-container {
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+}
+div.jcrop-holder{
+	width:400px;
+}
+.bigtutts{float:left;width:240px;height:240px;margin-right:20px;}
+.preview-container{margin-bottom: 10px;}
+.span12{padding:0 20px;}
+#preview-pane{float:left;}

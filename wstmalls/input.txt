@@ -1,0 +1,128 @@
+button 	定义可点击的按钮（大多与 JavaScript 使用来启动脚本） 
+		输入类型定义可点击的按钮，这个按钮本身不会做任何事情<input type="button" value="Click me" onclick="msg()" />
+checkbox 	定义复选框。
+		复选框允许用户在一定数量的选择中选取一个或多个选项。<input type="checkbox" name="vehicle" value="Bike" />
+color 	定义拾色器。
+		该输入类型允许您从拾色器中选取颜色：Color: <input type="color" name="user_color" />
+date 	定义日期字段（带有 calendar 控件）
+		HTML5 拥有多个供选择日期和时间的新的输入类型：
+
+    date - 选择日、月、年
+    month - 选择月、年
+    week - 选择周、年
+    time - 选择时间（时、分）
+    datetime - 选择时间、日期、月、年（UTC 时间）
+    datetime-local - 选择时间、日期、月、年（本地时间）
+	Date: <input type="date" name="user_date" />
+email 	定义用于 e-mail 地址的文本字段
+		当提交表单时，会自动地对 email 字段的值进行验证。
+		E-mail: <input type="email" name="user_email" />
+file 	定义输入字段和 "浏览..." 按钮，供文件上传
+		file 输入类型用于文件上传。
+		Select images: <input type="file" name="img" />
+hidden 	定义隐藏输入字段
+		<input type="hidden" name="country" value="Norway" />
+image 	定义图像作为提交按钮
+		image 输入类型将图像定义为提交按钮。
+		<input type="image" src="img_submit.gif" alt="Submit" />
+number 	定义带有 spinner 控件的数字字段
+		number 输入类型用于包含数字值的输入字段。
+		Points: <input type="number" name="points" min="1" max="10" />
+password 	定义密码字段。字段中的字符会被遮蔽。
+		password 输入类型定义密码字段。密码字段中的字符会被遮蔽（显示为星号或实心圆）。
+		<input type="password" name="pwd" />
+radio 	定义单选按钮。
+		<input type="radio" name="sex" value="male" /> Male<br />
+range 	定义带有 slider 控件的数字字段。
+		range 类型显示为滑块。
+		<input type="range" name="points" min="1" max="10" />
+reset 	定义重置按钮。重置按钮会将所有表单字段重置为初始值。
+		<input type="reset" />
+search 	定义用于搜索的文本字段。
+		搜索字段的外观与常规的文本字段无异。
+submit 	定义提交按钮。提交按钮向服务器发送数据。
+		<form action="form_action.asp" method="get">
+tel 	定义用于电话号码的文本字段。
+		Mobile: <input type="tel" name="user_mobile" />
+text 	默认。定义单行输入字段，用户可在其中输入文本。默认是 20 个字符。
+url 	定义用于 URL 的文本字段。
+		会在提交表单时对 url 字段的值自动进行验证。
+		Homepage: <input type="url" name="user_url" />
+		
+
+		
+************************************************************
+form
+document.forms["myForm"].submit();
+	character_set
+		<form accept-charset="value">
+    	UTF-8 - Unicode 字符编码
+    	ISO-8859-1 - 拉丁字母表的字符编码
+    	gb2312 - 简体中文字符集
+		
+	enctype="text/plain"
+		application/x-www-form-urlencoded 	在发送前编码所有字符（默认）
+		multipart/form-data 	不对字符编码。在使用包含文件上传控件的表单时，必须使用该值。
+		text/plain		空格转换为 "+" 加号，但不对特殊字符编码。
+	action 规定当提交表单时向何处发送表单数据
+		<form action="/">
+    	绝对 URL - 指向其他站点（比如 src="www.example.com/example.htm"）
+    	相对 URL - 指向站点内的文件（比如 src="example.htm"）
+	method URL属性规定如何发送表单数据（表单数据发送到 action 属性所规定的页面）。
+		表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）的方式来发送。
+	target="value"
+		_blank 	在新窗口中打开。
+		_self 	默认。在相同的框架中打开。
+		_parent 	在父框架集中打开。
+		_top 	在整个窗口中打开。
+		framename 	在指定的框架中打开。
+	autocomplete on|off
+	属性规定表单是否应该启用自动完成功能。
+		autocomplete 属性适用于 <form>，以及下面的 <input> 类型：text, search, url, telephone, email, password, datepickers, range 以及 color。
+		<form autocomplete="on|off">
+		<input type="email" name="email" autocomplete="off" /><br />
+	novalidate <form action="demo_form.asp" novalidate="novalidate">
+menus、textarea、fieldset、legend 和 label 元素。
+
+	     本例演示如何在数据周围绘制一个带标题的框。
+	<fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+ 
+ 
+ 
+ 
+
+select  
+	<select>
+  		<option value ="volvo">Volvo</option>
+  		<option value ="saab">Saab</option>
+	</select>
+	autofocus 	autofocus 	规定在页面加载后文本区域自动获得焦点。
+	disabled 	disabled 	规定禁用该下拉列表。
+	form 	form_id 	规定文本区域所属的一个或多个表单。
+	multiple 	multiple 	规定可选择多个选项。
+	name 	name 	规定下拉列表的名称。
+	required 	required 	规定文本区域是必填的。
+	size 	number 	规定下拉列表中可见选项的数目。
+  	http://www.w3school.com.cn/jsref/dom_obj_select.asp
+  
+  
+textarea 
+	autofocus 	autofocus 	规定在页面加载后文本区域自动获得焦点。
+	cols 	number 	规定文本区内的可见宽度。
+	disabled 	disabled 	规定禁用该文本区。
+	form 	form_id 	规定文本区域所属的一个或多个表单。
+	maxlength 	number 	规定文本区域的最大字符数。
+	name 	name_of_textarea 	规定文本区的名称。
+	placeholder 	text 	规定描述文本区域预期值的简短提示。
+	readonly 	readonly 	规定文本区为只读。
+	required 	required 	规定文本区域是必填的。
+	rows 	number 	规定文本区内的可见行数。
+	wrap 	
+    	hard
+   		soft
+		规定当在表单中提交时，文本区域中的文本如何换行。。
+	

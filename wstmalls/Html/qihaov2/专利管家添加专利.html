@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>会员中心商标管家添加</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min-1.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<script type="text/javascript" src="./dist/echarts.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+<div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+<div class="col-xs-10 hnavlist newhnavlist">
+<ul>
+<li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>会员首页</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>资金管理</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>买家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav4.png"/><br/>卖家中心</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav7.png"/><br/>商城管理</a></li>
+<li><a href="#" title="#" target="_blank"><img src="images/nav5.png"/><br/>商标管家</a></li>
+<li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav6s.png"/><br/>专利管家</a></li>
+</ul>
+</div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+	<dl>
+		<dt><a href="#" title="#">我的专利</a></dt>
+		<dd><a href="#" title="#" id="hons2" >专利概况</a></dd>
+		<dd><a href="#" title="#" id="hons3" class="onth">添加专利</a></dd>
+		<dd><a href="#" title="#" id="hons4">我的专利数据库</a></dd>
+	</dl>
+	
+</div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon">
+<div class="hytit">
+<div class="paleft">您当前的位置：<a href="#" title="#">专利管家</a> > <a href="#" title="#">添加专利</a></div>
+</div>
+<div class="hgrzy">
+<!--查询-->
+<div class="col-xs-12 patjb">
+<!--
+<div class="col-xs-12 patyhs">
+您当前为<span>普通会员</span>,共能添加<span>100</span>件商标,已添加商标<span>92</span>件专利。
+</div>
+-->
+<div class="col-xs-12">
+<div class="paform">
+<form method="post" action="a.html">
+<div class="formdiv">
+<select name="zlm" class="pazlm">
+<option value="专利名">专利名</option>
+<option value="权利人">权利人</option>
+</select>
+<input type="text" name="paseach" class="pasearch" />
+<input type="submit" value="检索" class="pasub"/>
+</div>
+<div class="pacheckbox">
+<span><input name="Fruit" type='checkbox' value='全选' class="allsel">全选</span>
+<span><input name="Fruit" type='checkbox' value='发明专利' class="allone">发明专利</span>
+<span><input name="Fruit" type='checkbox' value='实用新型' class="allone">实用新型</span>
+<span><input name="Fruit" type='checkbox' value='外观设计' class="allone">外观设计</span>
+<span><input name="Fruit" type='checkbox' value='发明授权' class="allone">发明授权</span>
+<span><input name="Fruit" type='checkbox' value='中国台湾' class="allone">中国台湾</span>
+<span><input name="Fruit" type='checkbox' value='香港特区' class="allone">香港特区</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!--查询-->
+<!--查询结果-->
+<div class="col-xs-12 pazhlist" >
+          <table cellpadding="0" cellspacing="0" class="tablesths">
+            <thead>
+              <tr>
+                <th width="8%">序号</th>
+                <th width="7%">类型</th>
+                <th width="15%">专利号</th>
+                <th width="20%">专利名</th>
+                <th width="20%">权利人</th>
+                <th width="10%">添加状态</th>
+                <th width="20%"> <div class="fgroupleft">每页显示</div>
+                  <div class="col-xs-5">
+                    <form action="a.html" method="post">
+                      <select class="form-control xianshit" name="zlflst1">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="fgroupleft">件</div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="8%"><input type="checkbox" name="gwct1" value="1"/>
+                  &nbsp;1</td>
+                <td width="7%"><span class="famin">发明</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjg">未添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(1);" class="tabaction"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
+              </tr>
+              <tr>
+                <td width="8%"><input type="checkbox" name="gwct2" value="2"/>
+                  &nbsp;2</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(2);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct3" value="3"/>
+                  &nbsp;3</td>
+                <td width="7%"><span class="waiguan">外观</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(3);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct4" value="4"/>
+                  &nbsp;4</td>
+                <td width="7%"><span class="waiguan">外观</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(4);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct5" value="5"/>
+                  &nbsp;5</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(5);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct6" value="6"/>
+                  &nbsp;6</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(6);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct7" value="7"/>
+                  &nbsp;7</td>
+                <td width="7%"><span class="famin">发明</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjg">未添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(7);" class="tabaction"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct8" value="8"/>
+                  &nbsp;8</td>
+                <td width="7%"><span class="famin">发明</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjg">未添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(8);" class="tabaction"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct9" value="9"/>
+                  &nbsp;9</td>
+                <td width="7%"><span class="famin">发明</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjg">未添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="del(9);" class="tabaction"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct10" value="10"/>
+                  &nbsp;10</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(10);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct11" value="11"/>
+                  &nbsp;11</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(11);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td width="8%"><input type="checkbox" name="gwct12" value="12"/>
+                  &nbsp;12</td>
+                <td width="7%"><span class="shiyou">实用</span></td>
+                <td width="15%" >CN89105713.7</td>
+                <td width="20%">一种矿山通风除尘方法及装置</td>
+                <td width="20%">安徽三联交通应用技术股份有限公司</td>
+                <td width="10%" class="ckjgs">已添加</td>
+                <td width="20%"><a href="#" title="#" class="tabaction"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a><a href="#" title="#" onClick="add(12);" class="tabaction"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a></td>
+              </tr>
+			  <tr>
+                <td colspan="7">
+				<div class="paalls"><input type="checkbox" name="alls" value="alls" id="alls"/>&nbsp;全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您选中了<span id="nums">0</span>件专利</div>
+				<div class="seltot"><a href="javascript:" class="btn btn-default paadd">添加</a>  <a href="javascript:" class="btn btn-default adddel">删除</a></div>
+				</td>
+             </tr>
+            </tbody>
+          </table>
+          <div class="daohan">
+            <div class="qiehuan pabluest">
+              <div class="qieleft"><a href="#" title="#"> <<上一页 </a></div>
+              <ul>
+                <li><a href="#" title="#">1</a></li>
+                <li><a href="#" title="#">2</a></li>
+                <li><a href="#" title="#">3</a></li>
+                <li><a href="#" title="#">4</a></li>
+                <li><a href="#" title="#">5</a></li>
+              </ul>
+              <div class="qieleft"><a href="#" title="#">下一页>> </a></div>
+              <div class="tiao"> <span>共58页/1235条</span>
+                <form method="post" action="#" class="fudons">
+                  <input type="text" name="shu" value="1" class="inps"/>
+                  <input type="submit" value="GO" class="sub"/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--查询结果-->
+</div>
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+/*选择显示页数*/
+$('.xianshit').change(function(){
+$(this).parent().submit();
+})
+/*选择显示页数*/
+
+/*搜索全选*/
+$('.allsel').click(function(){
+if(this.checked){
+$(".pacheckbox").find("input[name*='Fruit']").prop("checked",true);
+}else{
+$(".pacheckbox").find("input[name*='Fruit']").removeAttr("checked");
+}
+})
+$(".allone").click(function(){
+if(!(this.checked)){
+$('.allsel').removeAttr("checked");
+}
+})
+/*搜索全选*/
+
+/*选中数量*/
+function zoushu(){
+	var num=$("input[name*='gwct']:checked").length;
+	$("#nums").html(num);
+	}
+
+/*全选*/
+$('#alls').click(function(){
+if(this.checked){
+$(".tablesths").find("input[name*='gwct']").prop("checked",true);
+}else{
+$(".tablesths").find("input[name*='gwct']").removeAttr("checked");
+}
+zoushu();
+})
+$(".tablesths input[name*='gwct']").click(function(){
+if(!(this.checked)){
+$('#alls').removeAttr("checked");
+}
+zoushu();
+})
+/*全选*/
+
+/*删除*/
+$('.adddel').click(function(){
+var row=new Array();
+var n=0;
+$(".tablesths input[name*='gwct']").each(function(){
+if(this.checked){
+var ids=$(this).val();
+row[n]=ids;
+n++;
+}
+})
+rows = row.join(",");
+alert(rows);
+var send_data={'id':rows};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*删除*/
+
+/*添加*/
+$('.paadd').click(function(){
+var row=new Array();
+var n=0;
+$(".tablesths input[name*='gwct']").each(function(){
+if(this.checked){
+var ids=$(this).val();
+row[n]=ids;
+n++;
+}
+})
+rows = row.join(",");
+alert(rows);
+var send_data={'id':rows};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+})
+/*添加*/
+
+/*单个添加*/
+function add(id){
+var send_data={'id':id};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+}
+/*单个添加*/
+
+/*单个删除*/
+function del(id){
+var send_data={'id':id};
+$.post("a.php",send_data,function(data,ts){
+if(ts){
+window.location.reload();
+}
+})		
+}
+/*单个删除*/
+
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+$(document).ready(function(){
+$(".tablesths tr:odd").css('background','#F5F5F5');
+});
+
+$(".tablesths tr:odd").hover(function(){
+	$(this).css('background','#EDFCFF');
+},function(){
+	$(this).css('background','#F5F5F5');
+  }
+);
+$(".tablesths tr:even").hover(function(){
+	$(this).css('background','#EDFCFF');
+},function(){
+	$(this).css('background','none');
+  }
+);
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+	$('.ddtits').click(function(){
+	$(this).parent().children('.ddxiangqins').slideToggle("slow");
+
+	})
+});
+</script>
+</body>
+</html>

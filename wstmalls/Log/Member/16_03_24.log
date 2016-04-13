@@ -1,0 +1,225 @@
+[ 2016-03-24T17:36:36+08:00 ] 127.0.0.1 /Member/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `qh_shop` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `qh_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_item` WHERE `userid` = 2 AND `tmpa` = 1 AND `state` = 1 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_item` WHERE `userid` = 2 AND `tmpa` = 2 AND `state` = 1 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `qh_order` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_order` WHERE `buyer` = 2 AND `state` = 1 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_supply` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_supply` WHERE `userid` = 2 AND `supplytype` = 2 AND `state` = 1 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_order` WHERE `buyer` = 2 AND `state` = 1 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_moneylog` [ RunTime:0.0140s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `qh_moneylog` WHERE `userid` = 2 AND `type` = 4 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `qh_moneylog` WHERE `userid` = 2 AND `type` = 3 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `qh_moneylog` WHERE `userid` = 2 AND `type` = 5 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT *,(select `name` from qh_items where qh_items.id = qh_item.groupid) as groupname FROM `qh_item` WHERE `state` = 1 ORDER BY rand() LIMIT 0,8   [ RunTime:2.0371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-03-24T17:36:49+08:00 ] 127.0.0.1 /Member/Buyer/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:36:50+08:00 ] 127.0.0.1 /Member/Buyer/order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_order` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_order` WHERE `buyer` = 2 AND qh_order.state < '21' AND qh_order.buyerdel = '1' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`uid`,`type`,`seller`,`itemids`,`amount`,`state`,`datetime`,`updatetime` FROM `qh_order` WHERE `buyer` = 2 AND qh_order.state < '21' AND qh_order.buyerdel = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0150s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0230s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0316091859108151' [ RunTime:0.0130s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0309104139386807' [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `qh_patent_member` [ RunTime:0.0140s ]
+SQL: SELECT qh_patent_member.applynum,qh_patent_housekeeper.cname,qh_patent_housekeeper.picture,qh_patent_member.pay_total,qh_patent_member.annual FROM `qh_patent_member` INNER JOIN qh_patent_housekeeper on qh_patent_housekeeper.patentnum =  qh_patent_member.applynum  WHERE qh_patent_member.id IN ('09778')  [ RunTime:0.0240s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0215044101350680' [ RunTime:0.0130s ]
+SQL: SELECT qh_patent_member.applynum,qh_patent_housekeeper.cname,qh_patent_housekeeper.picture,qh_patent_member.pay_total,qh_patent_member.annual FROM `qh_patent_member` INNER JOIN qh_patent_housekeeper on qh_patent_housekeeper.patentnum =  qh_patent_member.applynum  WHERE qh_patent_member.id IN ('09777')  [ RunTime:0.0280s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0215043506420554' [ RunTime:0.0120s ]
+SQL: SELECT qh_patent_member.applynum,qh_patent_housekeeper.cname,qh_patent_housekeeper.picture,qh_patent_member.pay_total,qh_patent_member.annual FROM `qh_patent_member` INNER JOIN qh_patent_housekeeper on qh_patent_housekeeper.patentnum =  qh_patent_member.applynum  WHERE qh_patent_member.id IN ('09778')  [ RunTime:0.0290s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0215043402222299' [ RunTime:0.0120s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 1817 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000584 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0127053916994918' [ RunTime:0.0130s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 1817 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000581 LIMIT 1   [ RunTime:0.0110s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0127053852812353' [ RunTime:0.0110s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000297 LIMIT 1   [ RunTime:0.0140s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0121042255526242' [ RunTime:0.0120s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000098 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0121042225143890' [ RunTime:0.0130s ]
+SQL: SELECT `name`,`username`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000089 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0121022628528027' [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:22+08:00 ] 127.0.0.1 /Member/Seller/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_order` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_order` WHERE `seller` = 2 AND qh_order.state < '21' AND qh_order.sellerdel = '1' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `id`,`uid`,`type`,`buyer`,`itemids`,`amount`,`state`,`datetime`,`updatetime` FROM `qh_order` WHERE `seller` = 2 AND qh_order.state < '21' AND qh_order.sellerdel = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0170s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 741 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `qh_item` [ RunTime:0.0150s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000231 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0316091859108151' [ RunTime:0.0140s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2102 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000085 LIMIT 1   [ RunTime:0.0140s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0312042647769671' [ RunTime:0.0150s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0309104139386807' [ RunTime:0.0130s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2128 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000665 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0302054715863615' [ RunTime:0.0150s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 1827 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0120s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0222111858268859' [ RunTime:0.0140s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2090 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000087 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0219111256711153' [ RunTime:0.0140s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2084 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 20000038 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0216054242836410' [ RunTime:0.0150s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 1827 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000058 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0201095332404129' [ RunTime:0.0130s ]
+SQL: SELECT `name`,`mobile`,`email`,`qq`,`tel` FROM `qh_member` WHERE `id` = 2059 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT id as sid,`img`,`tmno`,`tmpa`,`title`,`tmtradeway` FROM `qh_item` WHERE `id` = 10000085 LIMIT 1   [ RunTime:0.0130s ]
+SQL: UPDATE `qh_order` SET `state`='11' WHERE `uid` = '0125025448329313' [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:29+08:00 ] 127.0.0.1 /Member/Seller/releasegoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_member` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 1 D:\wamps\www\wstmall\App\Member\Controller\MemberBaseController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `qh_items` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `qh_items` WHERE `tmpa` = 1 AND `parentid` = 0  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qh_items` WHERE `tmpa` = 2 AND `parentid` = 0  [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-24T17:37:39+08:00 ] 127.0.0.1 /Member/Seller/batch/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_batch` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_batch` WHERE `memberid` = 2 AND `state` < '10' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qh_batch` WHERE `memberid` = 2 AND `state` < '10' LIMIT 0,10   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-24T18:07:38+08:00 ] 127.0.0.1 /Member/Seller/batch/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qh_batch` [ RunTime:0.0640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qh_batch` WHERE `memberid` = 2 AND `state` < '10' LIMIT 1   [ RunTime:0.0650s ]
+SQL: SELECT * FROM `qh_batch` WHERE `memberid` = 2 AND `state` < '10' LIMIT 0,10   [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

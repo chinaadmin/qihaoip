@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>用户中心商品管理</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/minimal/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/sun.css" rel="stylesheet" type="text/css" />
+<link href="css/qihao.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jq_scroll.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+
+</script>
+<style type="text/css">
+body{background:#ffffff;}
+</style>
+</head>
+<body>
+<!--头部-->
+<div class="htop">
+<div class="htopleft"><a href="#" title="#" target="_blank">7号网会员中心</a> &nbsp;&nbsp;客服热线：400-889-7080</div>
+<div class="htopright"><a href="#" title="#" target="_blank"><img src="images/huiyuan.jpg"></a><a href="#" title="#" target="_blank">PM1412161705087</a>，早！又是忙碌的一天！祝您过得快乐！ &nbsp;&nbsp;<a href="#" title="#">【退出】</a> </div>
+</div>
+<!--logo与导航-->
+<div class="hnavs newhnavs">
+  <div class="col-xs-2 hlogo newhlogo"><a href="#" title="#" target="_blank"><img src="images/memlogo.png"/></a></div>
+  <div class="col-xs-10 hnavlist newhnavlist">
+    <ul>
+      <li><a href="#" title="#" target="_blank" ><img src="images/nav1.png"/><br/>
+        会员首页</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav2.png"/><br/>
+        资金管理</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav3.png"/><br/>
+        买家中心</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav4.png"/><br/>
+        卖家中心</a></li>
+      <li><a href="#" title="#" target="_blank" class="selnav"><img src="images/nav7s.png"/><br/>
+        商城管理</a></li>
+      <li><a href="#" title="#" target="_blank"><img src="images/nav5.png"/><br/>
+        商标管家</a></li>
+      <li><a href="#" title="#" target="_blank" ><img src="images/nav6.png"/><br/>
+        专利管家</a></li>
+    </ul>
+  </div>
+</div>
+<!--logo与导航-->
+<!--头部-->
+<!--主体-->
+<div class="hzlcon">
+<!--左侧导航-->
+<div class="hconleft">
+<div class="hconlefts">
+	<dl>
+		<dt><a href="#" title="#">商城管理</a></dt>
+		<dd><a href="#" title="#" id="hons3" >商城资料</a></dd>
+		<dd><a href="#" title="#" id="hons2" class="onth">客服设置</a></dd>
+		<dd><a href="#" title="#" id="hons2" >商城装饰</a></dd>
+		<dd><a href="#" title="#" id="hons2" >商品管理</a></dd>
+	</dl>
+</div>
+</div>
+<!--左侧导航-->
+<!--右侧内容-->
+<div class="hconright">
+<div class="hconrightcon">
+<div class="hytit">
+您当前的位置：<a href="#" title="#">商城管理</a> > <a href="#" title="#">客服设置</a>
+</div>
+<div class="hgrzy">
+<div class="col-xs-12 kefus_title">客服设置</div>
+<div class="col-xs-12 kefus_add"><a href="#" title="#" class="btn btn-primary">添加客服</a><span>请添加1-4个客服</span></div>
+<div class="col-xs-12 ">
+<form class="form-horizontal" action="a.html" method="post">
+<table cellpadding="0" cellspacing="0" class="kefus_list">
+<tbody>
+<tr>
+<td width="30%"><span>客服QQ:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="QQ" /></td>
+<td width="30%"><span>客服名称:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="客服名称" /></td>
+<td width="20%"><span>排序:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="数字大的显示靠前" /></td>
+<td width="20%"><a href="javascript:" title="#" onClick="dels(this);" rel="1">删除</a><input type="checkbox" name="hidden" value="option1">&nbsp;隐藏</td>
+</tr>
+<tr>
+<td width="30%"><span>客服QQ:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="QQ" /></td>
+<td width="30%"><span>客服名称:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="客服名称" /></td>
+<td width="20%"><span>排序:&nbsp; </span><input type="text" name="zlmcst" class="form-control kefus_input" placeholder="数字大的显示靠前" /></td>
+<td width="20%"><a href="javascript:" title="#" onClick="dels(this);" rel="2">删除</a><input type="checkbox" name="hidden" value="option2">&nbsp;隐藏</td>
+</tr>
+</tbody>
+</table>
+<div class="col-xs-12 kefus_phone">
+<div class="kefus_phone_title">联系方式</div>
+<div class="kefus_phone_contents"><span>手机:123345554</span><a href="#" title="#">编辑</a><input type="checkbox" name="hidden" value="option2">&nbsp;隐藏</div>
+<div class="kefus_phone_contents"><span>手机:123345554</span><a href="#" title="#">编辑</a><input type="checkbox" name="hidden" value="option2">&nbsp;隐藏</div>
+</div>
+<div class="col-xs-12 kefus_phone">
+<div class="kefus_phone_title">工作时间</div>
+<div class="form-group kefus_time">
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflstt">
+  <option value="周一">周一</option>
+  <option value="周二">周二</option>
+  <option value="周三">周三</option>
+</select>
+</div>
+<span>至</span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflst1s">
+  <option value="周五">周五</option>
+  <option value="周四">周四</option>
+  <option value="周三">周三</option>
+</select>
+</div>
+<span></span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflstt">
+  <option value="9:00">9:00</option>
+  <option value="8:30">8:30</option>
+</select>
+</div>
+<span>-</span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflst1s">
+  <option value="18:00">18:00</option>
+  <option value="17:30">17:30</option>
+</select>
+</div>
+<div class="col-xs-1 kefus_time_hidden">
+<input type="checkbox" name="hidden" value="option2"> <span>&nbsp;隐藏</span>
+</div>
+</div>
+<div class="form-group kefus_time">
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflstt">
+  <option value="周一">周一</option>
+  <option value="周二">周二</option>
+  <option value="周三">周三</option>
+</select>
+</div>
+<span>至</span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflst1s">
+  <option value="周五">周五</option>
+  <option value="周四">周四</option>
+  <option value="周三">周三</option>
+</select>
+</div>
+<span></span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflstt">
+  <option value="9:00">9:00</option>
+  <option value="8:30">8:30</option>
+</select>
+</div>
+<span>-</span>
+<div class="col-xs-1 hjuli">
+<select class="form-control" name="zlflst1s">
+  <option value="18:00">18:00</option>
+  <option value="17:30">17:30</option>
+</select>
+</div>
+<div class="col-xs-1 kefus_time_hidden">
+<input type="checkbox" name="hidden" value="option2"> <span>&nbsp;隐藏</span>
+</div>
+</div>
+</div>
+<div class="col-xs-12 kefus_phone">
+<button type="submit" class="btn btn-warning">确认提交</button>
+</div>
+</form>
+</div>
+</div>
+<div class="dibus">
+<p>©2014-2018 7号网 版权所有ICP经营性许可证：粤ICP备注5024104号-1</p>
+<p>客服热线：400-889-7080 地址：深圳市南山区南山大道3838号深圳设计产业园金栋308-312、210-212</p>
+</div>
+</div>
+</div>
+<!--右侧内容-->
+
+</div>
+<!--主体-->
+<!--右侧热线-->
+
+<!--右侧热线-->
+<!--底部-->
+
+
+<!--底部-->
+<script type='text/javascript'>
+
+$('.kefus_add a').click(function(){
+//alert('ppp');
+/*
+var contents=' ';
+contents+="<tr><td width='"+'30%'+"'><span>客服QQ:&nbsp;</span><input type="+'text'+" name="+'zlmcst'+" class='"+'form-control kefus_input'+"' placeholder="+'QQ'+" /></td>";
+contents+="<td width="+'30%'+"><span>客服名称:&nbsp; </span><input type="+'text'+" name="+'zlmcst'+" class='"+'form-control kefus_input'+"' placeholder="+'客服名称'+" /></td>";
+contents+="<td width="+'20%'+"><span>排序:&nbsp; </span><input type="+'text'+" name="+'zlmcst'+" class='"+'form-control kefus_input'+"' placeholder="+'数字大的显示靠前'+" /></td>";
+contents+="<td width="+'20%'+"><a href="+'javascript:'+" title="+'#'+" onClick="+'dels(this);'+" rel="+'3'+">删除</a><input type="+'checkbox'+" name="+'hidden'+" value="+'option1'+">&nbsp;隐藏</td>";
+contents+="</tr>";
+*/
+var send_data={'id':add};
+$.post("aaaa.php",send_data,function(contents){
+$('.kefus_list tbody').append(contents);
+})
+
+})
+
+function dels(obj){
+var id=$(obj).attr('rel');
+alert(id);
+var send_data={'id':id};
+$.post("aaaa.php",send_data,function(data){
+
+})
+$(obj).parents('tr').remove();
+}
+
+
+/*导航切换*/
+$(".newhnavlist li").hover(function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-4;
+tu=tu.substring(0,len);
+//alert(tu+'s.png');
+$(this).find('img').attr('src',tu+'s.png');
+}
+},function(){
+if(!$(this).find('a').hasClass('selnav')){
+var tu=$(this).find('img').attr('src');
+var len=tu.length;
+len=len-5;
+tu=tu.substring(0,len);
+//alert(tu+'.png');
+$(this).find('img').attr('src',tu+'.png');
+}
+}
+)
+/*导航切换*/
+$(document).ready(function(){
+
+});
+/*左侧导航切换*/
+$(function(){
+	$(".hconlefts dt").click(function(){ 
+	$(this).parent().children('dd').slideToggle("slow");
+    $(this).parent().siblings('dl').children('dd').siblings("dd:visible").slideUp("slow");
+	});
+	$('.ddtits').click(function(){
+	$(this).parent().children('.ddxiangqins').slideToggle("slow");
+	})
+});
+/*左侧导航切换*/
+
+</script>
+</body>
+</html>
